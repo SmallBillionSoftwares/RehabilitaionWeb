@@ -1,0 +1,268 @@
+ /* used to hide home in navigation bar (alignment problem)  */
+ .hide-home{
+display: none;
+}
+            
+/**  general style for the body **/
+body{
+overflow-x: hidden;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/*.offset:before{
+	display: block;
+	content: "";
+	height: 4rem;
+	margin-top: -4rem;
+}*/
+
+/************ *********************************  Navigation styles *************************************/
+
+/* style for the navigation bar */
+.navbar{
+	text-transform: uppercase;
+	color: white !important;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	background:rgba(30,178,0) !important;
+}
+
+/*  style for navigation image logo */
+.navbar-brand img{
+	height: 2rem;
+}
+
+/* style navigation links */
+.navbar-nav li{
+ padding-right: .7rem;
+}
+
+/* general style for navigation links  */
+.navbar-dark .navbar-nav .nav-link{
+	color: white !important;
+	padding-top: .8rem;
+}
+
+/* style for navigation links when active and when hovered on */
+.navbar-dark .navbar-nav .nav-link.active , .navbar-dark .navbar-nav .nav-link:hover{
+	color: black !important;
+}
+
+/*********************************** **   Landing page styles   ************************************/
+
+
+/* background image for landing page */
+.home-inner{
+	background-image: url("../image/d01.gif");
+	
+}
+
+.home-wrap{
+	background-color: rgba(0,0,0,0.75);
+
+}
+
+
+
+
+/* style for landing page text */
+.caption{
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 15%;
+	color: green !important;
+	z-index: 1;
+	text-transform: uppercase;
+	background-color: rgba(0,0,0,0.75);
+  
+}
+
+/* style for header 1 */
+.caption h1{
+	font-size: 3.8rem;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	text-shadow:.1rem .1rem .8rem black;
+	padding-bottom: 1rem;
+}
+
+/* style for header 3 */
+.caption h3{
+	font-size: 2rem;
+	text-shadow:.1rem .1rem .4rem black;
+}
+
+ /* styles for resize*/
+ @media (max-width: 767px)
+ {
+ 	/* style for header 1 */
+	.caption h1{
+	font-size: 2.3rem;
+	letter-spacing: .15rem;
+	padding-bottom: .5rem;
+	}
+
+	/* style for header 3 */
+	.caption h3{
+	font-size: 1.2rem;
+	text-shadow:.1rem .1rem .4rem black;
+	}
+
+}
+
+/********************************* style for what is done in sober kenya *********************************************/
+
+/*general style for the secton*/
+.narrow{
+	border-color: red;
+	width: 75;
+	margin: 2.0rem auto;
+	padding-top: 2rem; 
+}
+
+/*style for the header */
+.narrow h1{
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+
+
+/* styles for resize*/
+ @media (max-width: 767px){
+ 	/*style for the header */
+	.narrow h1{
+	font-size: 1.9rem;
+	}
+
+	/*style for paragraph*/
+	.narrow p{
+		font-size: 1.2rem;
+	}
+ }
+
+/********************************************* style for founders  **************************************************/
+
+/*used to change the default style of jumbotron*/
+.jumbotron{
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/*style for images of the founders */
+.founder img{
+ width: 100%;
+ border-radius: 50%;
+}
+
+.heading{
+	font-weight: 700;
+}
+
+/*style for horizontal line below the quotes*/
+.founder-hr{
+	border-top: .05rem solid #1ebba3;
+}
+
+/*style cards */
+.card{
+	box-shadow: 0 0 10px 0 #000;
+	margin:2rem;
+}
+
+/*styles for the qoutes icon*/
+blockquote .fa-quote-left{
+	color: #1ebba3;
+	margin:1rem;
+} 
+
+ /* styles for resize*/
+ @media (max-width: 767px){
+ 	/*style for images of the founders */
+	.founder img{
+ 	width: 50%;
+ 	display: block;
+ 	margin:0 auto;
+
+	}
+ }
+
+
+/*****************************************  location styles  **********************************************************/
+
+/*general styles*/
+#Location{
+	margin: 0;
+
+	width:100%;
+	max-width:100%;
+	 color: white;
+ z-index: 1;
+}
+
+/*style for header*/
+.header{
+	padding-top: 39px; 
+	font-weight: 700;
+}
+
+/*style for paragraph*/
+#Location p{
+	padding-bottom: 39px;
+}
+
+/*used to set the background color of loaction*/
+.fixed{
+background-image: url("../image/d6.gif");
+z-index: -1;
+}
+
+.dark{
+	background-color: rgba(0,0,0,0.75);
+}
+
+
+/*****************************************  Footer styles  **********************************************************/
+
+/*general styles for the footer */
+footer{
+	background:rgba(30,178,0) !important;
+	color: white;
+	padding:2rem 0 2rem;
+	margin-top: 0;
+}
+
+/*style for the logo */
+footer img{
+	height: 3rem;
+	margin: 1.5rem 0;
+}
+
+/*style for links*/
+footer a{
+	color: white;
+	
+}
+
+/*style for links on hover*/
+footer a:hover{
+	
+}
+
+/*style for the horizontal line*/
+hr.socket{
+	width: 100%;
+	border-top:.2rem solid #fff;
+	margin-top: 3rem;
+}
+
+/*style icons*/
+footer .fab{
+	font-size: 1.5rem;
+	margin: 1.2rem .5rem 0 0;
+}
+
+footer .fab:hover{
+	color: black;
+}

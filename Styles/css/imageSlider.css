@@ -1,0 +1,25 @@
+/*************************************** image slider styles ****************************************************/
+/*style for image*/
+.carousel-item img{
+	height: 100%;
+	width: 100%;
+}
+
+/* style for next and previous button*/
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	height: 30px;
+	width: 30px;
+}
+
+
+
+
+ /* styles for deives with small widths than 767px*/
+ @media (max-width: 767px){
+ 	/* style for next and previous button*/
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	height: 20px;
+	width: 20px;
+}
+ }
+
