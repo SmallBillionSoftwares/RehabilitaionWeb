@@ -1,0 +1,130 @@
+/************ *********************************  Navigation styles *************************************/
+
+/* style for the navigation bar */
+.navbar{
+	text-transform: uppercase;
+	color: white !important;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	background:rgba(30,178,0) !important;
+}
+
+/*  style for navigation image logo */
+.navbar-brand img{
+	height: 2rem;
+}
+
+/* style navigation links */
+.navbar-nav li{
+ padding-right: .7rem;
+}
+
+/* general style for navigation links  */
+.navbar-dark .navbar-nav .nav-link{
+	color: white !important;
+	padding-top: .8rem;
+}
+
+/* style for navigation links when active and when hovered on */
+.navbar-dark .navbar-nav .nav-link.active , .navbar-dark .navbar-nav .nav-link:hover{
+	color: black !important;
+}
+
+/************ ********************************* Second Navigation styles *************************************/
+
+/* style for the navigation bar */
+.navbar1{
+	text-transform: uppercase;
+	color: black !important;
+	font-weight: 700;
+	font-size: .9rem;
+	background:white !important;
+	margin-top: 56px;
+	margin-bottom: 1px;
+}
+
+
+/* style navigation links */
+.navbar-nav li{
+ padding-right: .3rem;
+}
+
+/* general style for navigation links  */
+.navbar-dark .navbar-nav .link1{
+	color: black !important;
+	padding-top: .5rem;
+}
+
+/* style for navigation links when active and when hovered on */
+.navbar-dark .navbar-nav .nav-link.active , .navbar-dark .navbar-nav .link1:hover{
+	color: green !important;
+}
+
+ /* styles for resize*/
+ @media (max-width: 767px)
+ {
+ 	/* style for the navigation bar */
+nav .navbar1, .hide-btn{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+ }
+
+/*****************************************  Footer styles  **********************************************************/
+
+/*general styles for the footer */
+footer{
+	background:rgba(30,178,0) !important;
+	color: white;
+	padding:2rem 0 2rem;
+	margin-top: 0;
+}
+
+/*style for the logo */
+footer img{
+	height: 3rem;
+	margin: 1.5rem 0;
+}
+
+/*style for links*/
+footer a{
+	color: white;
+	font-weight: 650;
+}
+
+/*style for links on hover*/
+footer a:hover{
+	color: black !important;
+}
+
+/*style for the horizontal line*/
+hr.socket{
+	width: 100%;
+	border-top:.2rem solid #fff;
+	margin-top: 3rem;
+}
+
+/*style for icons*/
+footer .fab{
+	font-size: 1.5rem;
+	margin: 1.2rem .5rem 0 0;
+	font-weight: 400;
+}
+
+
+/*style for icons on hover */
+footer .fab:hover{
+	color: black !important;
+}
+
+.offset:before{
+	display: block;
+	content: "";
+	height: 4rem;
+	margin-top: -4rem;
+}

@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width , initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
 		<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
+		<link rel="stylesheet"  type="text/css" href="Styles/css/navigationAndFooter.css">
 		<link rel="stylesheet"  type="text/css" href="Styles/css/about.css">
 		<link rel="stylesheet" type="text/css" href="icons/css/all.min.css">
 		<title>About Sober Kenya</title>
@@ -21,7 +22,7 @@
 				<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 					<a class="navbar-brand" href="#">
 						<!-- image logo -->
-						<img src="logo1.gif"/>
+						<img src="Styles/image/logo1.gif"/>
 					</a>
 
 						<!-- button toggler for small screen devices -->
@@ -32,13 +33,10 @@
 
 						<!-- navigation links  -->
 					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item hide-home" >
-								<a class="nav-link" href="home.html">Home</a>
-							</li>
-
+						<ul class="navbar-nav m-auto">
+							
 							<li class="nav-item">
-								<a class="nav-link" href="home.html">Home</a>
+								<a class="nav-link" href="index.html">Home</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="report.html">Report Abuse</a>
@@ -49,22 +47,66 @@
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" href="donate.html">Donate To Support</a>
-							</li>
-
-							<li class="nav-item">
 								<a class="nav-link" href="about.html">About</a>
 							</li>
-
 							<li class="nav-item">
-								<a class="nav-link" href="login.html"> Login</a>
+									<a class="nav-link" href="moreondrugs.html">More On Drugs</a>
 							</li>
+
 						</ul>
 					</div>
 						<!-- end navigation links -->
 
 				</nav>
 				<!-- end navigation bar -->
+
+	<!--Second Navigation bar -->
+				<nav class="navbar navbar1 navbar-expand-md navbar-dark bg-dark fixed-top">
+					<a class="navbar-brand" href="#">
+						<!-- image logo -->
+						<!-- <img src="logo1.gif"/> -->
+					</a>
+
+						<!-- button toggler for small screen devices -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive1">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<!-- end of button toggler -->
+
+						<!-- navigation links  -->
+						<div class="collapse navbar-collapse" id="navbarResponsive1">
+							<ul class="navbar-nav m-auto">
+								<li class="nav-item">
+								<a class="nav-link link1" href="moreondrugs.html#Founders">Causes of Drug Abuse</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link link1" href="moreondrugs.html#psychoDiv">Psychological effects</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link link1" href="moreondrugs.html#effect">Physical Effects</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link  link1" href="moreondrugs.html#effect"> Behavioral Effects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link link1" href="moreondrugs.html#effect"> Effects on Unborn</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link link1" href="moreondrugs.html#Location"> Health Effects</a>
+							</li>
+
+							
+							</ul>
+						</div>
+						<!-- end navigation links -->
+
+				</nav>
+				<!-- end of second navigation bar -->
+
+
 
 				<!-- the landing section -->
 				<div class="sec-landing">
@@ -77,9 +119,8 @@
 				</div>
 
 				<div class="caption text-center">
-					<h1>Welcome To Sober Kenya</h1>
-					<h3> About Sober Kenya</h3>
-
+					<h1>About To Sober Kenya</h1>
+			
 				</div>
 				</div>
 				<!-- end landing section -->
@@ -264,18 +305,37 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
 <!-- end founder cards -->
 
 
-<!-- start of contacts  -->
-<div id="contact" class="offset" >
-
+<!-- start of contact -->
+<div id="contact" class="offset">
 <!-- start of footer -->
 <footer>
 <div class="row justify-content-center">
 
 <div class="col-md-5 text-center">
-	<img src="logo1.gif">
+	
+	<img src="Styles/image/logo1.gif">
 	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-	<strong>Contact</strong>
-	<p>9876546789<br> soberkenya@info.com</p>
+<h3 class="ml-auto" style="color: black; font-weight: 700;">Quick Links</h3>
+
+	<div class="row text-center">
+		
+		<div class="col-md-4 mr-auto">
+			<h4></h4>
+			<a href="about.html" class="footLink">Who are we</a><br>                              
+               <a href="moreondrugs.html#Founders">Recreational use abuse</a><br> 
+               <a href="moreondrugs.html#Location">General Health Effects</a><br> 
+              
+		</div>
+
+      <div class="col-md-4 mr-auto">
+			<a href="enrol.html" class="footLink">Where to enrol</a><br>
+				 <a href="report.html" class="footLink">How to report</a><br>
+				  <a href="moreondrugs.html#effect">Effects on unborn</a><br> 
+		</div>
+
+		<div class="col-md-4">
+				<strong>Contact</strong>
+		<p>9876546789<br> <a href="mailto:soberkenya@info.com">soberkenya@info.com</a></p>
 
 		<!--social media fontawesome icons and links  -->
 	<a href="#" target="-blank"> <i class="fab fa-instagram"></i> </a>
@@ -283,10 +343,18 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
 	<a href="#" target="-blank"> <i class="fab fa-facebook-square"></i> </a>
 	<!--social media fontawesome icons and links  -->
 
+		</div>
+
+		
+		
+	</div>
+<!-- end row  -->
+
 </div>
+<!-- end col-md-5 -->
 
 <hr class="socket">
-&copy; Sober Kenya.
+&copy; Sober Kenya. 2019
 
 </div>
 
