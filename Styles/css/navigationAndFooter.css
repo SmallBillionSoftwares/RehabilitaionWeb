@@ -27,8 +27,12 @@
 }
 
 /* style for navigation links when active and when hovered on */
-.navbar-dark .navbar-nav .nav-link.active , .navbar-dark .navbar-nav .nav-link:hover{
-	color: black !important;
+ .navbar-dark .navbar-nav .nav-link.active{
+	color: black!important;
+}
+
+ .navbar-dark .navbar-nav .nav-link:hover{
+	color: black!important;
 }
 
 /************ ********************************* Second Navigation styles *************************************/
@@ -41,7 +45,7 @@
 	font-size: .9rem;
 	background:white !important;
 	margin-top: 56px;
-	margin-bottom: 1px;
+	/*margin-bottom: 1px;*/
 }
 
 
@@ -57,20 +61,40 @@
 }
 
 /* style for navigation links when active and when hovered on */
-.navbar-dark .navbar-nav .nav-link.active , .navbar-dark .navbar-nav .link1:hover{
-	color: green !important;
+ .navbar-dark .navbar-nav .link1.active {
+	color: #007308!important;
+ }
+
+ .navbar-dark .navbar-nav .link1:hover{
+	color: #007308!important;
+}
+
+.hide{
+	display: none;
 }
 
  /* styles for resize*/
  @media (max-width: 767px)
  {
  	/* style for the navigation bar */
-nav .navbar1, .hide-btn{
+ .navbar1 {
 	display: none;
 	margin: 0;
 	padding: 0;
 }
 
+.hide{
+	display: block;
+	color: white!important;
+}
+
+.navbar-dark .navbar-nav .link1{
+	color: white!important;
+}
+
+.navbar-dark .navbar-nav .link1:hover, .navbar-dark .navbar-nav .link1.active{
+	color: black!important;
+}
 
 
  }
@@ -127,4 +151,12 @@ footer .fab:hover{
 	content: "";
 	height: 4rem;
 	margin-top: -4rem;
+}
+
+.heading-underline{
+	width: 3rem;
+	height: .2rem;
+	background-color: #1ebba3;
+	margin: 1.3rem auto 2rem;
+	
 }
