@@ -1,3 +1,24 @@
+<?php
+
+if(isset($_POST['loginbtn'])){
+require 'connection.php';	
+$email=$_POST['email'];
+$password=$_POST['password'];
+$result=mysqli_query($con,'select * from user_details where email="'.$email.'" and password="'.$password.'" ');
+
+if(mysqli_num_rows($result)==1){
+	$_SESSION['email']=$email;
+	header('Location:dashboard.html');
+}
+else{
+	echo "Account Invalid";
+}
+
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +30,7 @@
 		<link rel="stylesheet"  type="text/css" href="Styles/css/login.css">
 </head>
 <body>
+
 <div class="bg">
 
 <div class="modal-dialog text-center " >
@@ -21,16 +43,16 @@
 			<!-- end of user image -->
 
 			<div class="col-12 form-input">
-				<form>
+				<form method="post">
 					<div class="form-group">
-						<input type="email" class="form-control" placeholder="Enter Email" name="">
+						<input type="email" class="form-control" placeholder="Enter Email" name="email">
 					</div>
 
 					<div class="form-group">
-						<input type="password" class="form-control" placeholder="Enter Password" name="">
+						<input type="password" class="form-control" placeholder="Enter Password" name="password">
 					</div>
 
-					<button type="submit" class="btn btn-success" href="index">Login</button>
+					<button type="submit"name="loginbtn" class="btn btn-success" href="index">Login</button>
 
 				</form>
 			</div> 
