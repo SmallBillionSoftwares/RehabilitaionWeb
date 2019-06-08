@@ -10,11 +10,11 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width , initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
-		<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
-		<link rel="stylesheet"  type="text/css" href="Styles/css/navigationAndFooter.css">
-		<link rel="stylesheet"  type="text/css" href="Styles/css/about.css">
-		<link rel="stylesheet" type="text/css" href="icons/css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
+		<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">
+		<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/navigationAndFooter.css">
+		<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/about.css">
+		<link rel="stylesheet" type="text/css" href="dashboard/icons/css/all.min.css">
 		<title>About Sober Kenya</title>
 </head>
 
@@ -28,7 +28,7 @@
 				<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 					<a class="navbar-brand" href="#">
 						<!-- image logo -->
-                        <img src="Styles/image/logo1.gif" alt="logo"/>
+                        <img src="dashboard/Styles/image/logo1.gif" alt="logo"/>
 					</a>
 
 						<!-- button toggler for small screen devices -->
@@ -127,13 +127,14 @@
 
 							
 							</ul>
+						
 						</div>
 						<!-- end navigation links -->
 
 				</nav>
 				<!-- end of second navigation bar -->
 
-
+			
 
 				<!-- the landing section -->
 				<div class="sec-landing">
@@ -223,7 +224,7 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
           <div class="col-md-4 founder">
               <div class="row">
                 <div class="col-md-4">
-                  <img src="Styles/image/d1.gif">
+                  <img src="dashboard/Styles/image/d1.gif">
                 </div>
                 <div class="col-md-8">
                    <blockquote>
@@ -241,7 +242,7 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
 						<div class="col-md-4 founder">
 							<div class="row">
 								<div class="col-md-4">
-									<img src="Styles/image/d1.gif">
+									<img src="dashboard/Styles/image/d1.gif">
 								</div>
 								<div class="col-md-8">
 									 <blockquote>
@@ -259,7 +260,7 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
 						<div class="col-md-4 founder">
 								<div class="row">
 									<div class="col-md-4">
-										<img src="Styles/image/d1.gif">
+										<img src="dashboard/Styles/image/d1.gif">
 									</div>
 									<div class="col-md-8">
 										 <blockquote>
@@ -291,7 +292,7 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
 	
 		<div  class="col-md-4">
 			<div class="card text-center">
-				<img src="Styles/image/d01.gif" class="card-img-top">
+				<img src="dashboard/Styles/image/d01.gif" class="card-img-top">
 				<div class="card-body">
 					<h4>Name</h4>
 					<p>"lkjhgfdfghjk lkjhgfhjkl "</p>
@@ -304,7 +305,7 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
 
 	<div  class="col-md-4">
 			<div class="card text-center">
-				<img src="Styles/image/d1.gif" class="card-img-top">
+				<img src="dashboard/Styles/image/d1.gif" class="card-img-top">
 				<div class="card-body">
 					<h4>Name</h4>
 					<p>"lkjhgfdfghjk lkjhgfhjkl "</p>
@@ -317,7 +318,7 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
 
 		<div  class="col-md-4">
 					<div class="card text-center">
-						<img src="Styles/image/d6.gif" class="card-img-top">
+						<img src="dashboard/Styles/image/d6.gif" class="card-img-top">
 						<div class="card-body">
 							<h4>Name</h4>
 							<p>"lkjhgfdfghjk lkjhgfhjkl "</p>
@@ -343,7 +344,7 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
 
 <div class="col-md-5 text-center">
 	
-	<img src="Styles/image/logo1.gif">
+	<img src="dashboard/Styles/image/logo1.gif">
 	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
 <h3 class="ml-auto" style="color: black; font-weight: 700;">Quick Links</h3>
 
@@ -391,14 +392,16 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
 </footer>
 <!-- end of footer -->
 
+		
+
 </div>
 <!-- end of contacts -->
 
 <!-- Scirpt source files -->
-	<script src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
-	<script src="Styles/bootStrap/js/popper.min.js"></script>
-	<script src="Styles/bootStrap/js/bootstrap.min.js"></script>
-	<script src="Styles/js/activeNavbar.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/popper.min.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/bootstrap.min.js"></script>
+	<script src="dashboard/Styles/js/activeNavbar.js"></script>
 <!-- end of script source files -->
 
 <!-- remove -->

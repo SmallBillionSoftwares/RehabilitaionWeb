@@ -8,12 +8,13 @@
 	<title>Report Abuse</title>
 	<meta  charset="utf-8">
 	<meta name="viewport" content="width=device-width , initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
-	<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
-	<link rel="stylesheet"  type="text/css" href="Styles/css/about.css">
-	<link rel="stylesheet"  type="text/css" href="Styles/css/navigationAndFooter.css">
-	<link rel="stylesheet"  type="text/css" href="Styles/css/imageSlider.css">
-	<link rel="stylesheet" type="text/css" href="icons/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
+	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">
+	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/about.css">
+	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/navigationAndFooter.css">
+	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/imageSlider.css">
+	<link rel="stylesheet" type="text/css" href="dashboard/icons/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="dashboard/Styles/css/forms.css">
 </head>
 <body>
 
@@ -24,7 +25,7 @@
 				<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 					<a class="navbar-brand" href="#">
 						<!-- image logo -->
-						<img src="Styles/image/logo1.gif"/>
+						<img src="dashboard/Styles/image/logo1.gif"/>
 					</a>
 
 						<!-- button toggler for small screen devices -->
@@ -133,6 +134,47 @@
 </div>
 <!-- end of home -->
 
+<!--start of report abuse form -->
+<div class="col-12 top-margin" style="margin-top: 9%; padding-bottom: 5%">
+    <!-- start enrol form -->
+    <form action="" style="margin: auto; width: 50%;" class="main-form needs-validation" novalidate="false">
+        <h1 class="text-center">Report Abuse</h1>
+        <div class="heading-underline"></div>
+
+      <div class="form-group">
+                    <label for="firstname">Full Names</label>
+                    <input type="text" name="fullname" class="form-control" required="true">
+                    <div class="invalid-feedback">invalid input</div>
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" name="phoneNumber" class="form-control">
+        </div>
+
+          <div class="form-group">
+            <label for="drugAbused">Drug Abused</label>
+            <input type="text" name="drugAbused" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location (County)</label>
+            <input type="text" name="location" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" class="form-control">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <!-- end report form -->
+</div>
+<!--end of report abuse form-->
 
 
 	<!-- start Founders section -->
@@ -173,7 +215,7 @@
 
 <div class="col-md-5 text-center">
 	
-	<img src="Styles/image/logo1.gif">
+	<img src="dashboard/Styles/image/logo1.gif">
 	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
 <h3 class="ml-auto" style="color: black; font-weight: 700;">Quick Links</h3>
 
@@ -225,10 +267,10 @@
 <!-- end of contacts -->
 
 <!-- Scirpt source files -->
-	<script src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
-	<script src="Styles/bootStrap/js/popper.min.js"></script>
-	<script src="Styles/bootStrap/js/bootstrap.min.js"></script>
-	<script src="Styles/js/activeNavabar.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/popper.min.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/bootstrap.min.js"></script>
+	<script src="dashboard/Styles/js/activeNavabar.js"></script>
 <!-- end of script source files -->
 
 <!-- remove -->

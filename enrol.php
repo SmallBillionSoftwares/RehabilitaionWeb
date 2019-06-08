@@ -8,12 +8,12 @@
 	<title>Enrol to rehab</title>
 	<meta  charset="utf-8">
 	<meta name="viewport" content="width=device-width , initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
-	<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
-	<link rel="stylesheet"  type="text/css" href="Styles/css/about.css">
-	<link rel="stylesheet"  type="text/css" href="Styles/css/navigationAndFooter.css">
-	<link rel="stylesheet"  type="text/css" href="Styles/css/imageSlider.css">
-	<link rel="stylesheet" type="text/css" href="icons/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
+	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">
+	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/about.css">
+	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/navigationAndFooter.css">
+	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/imageSlider.css">
+	<link rel="stylesheet" type="text/css" href="dashboard/icons/css/all.min.css">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
 				<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 					<a class="navbar-brand" href="#">
 						<!-- image logo -->
-						<img src="Styles/image/logo1.gif"/>
+						<img src="dashboard/Styles/image/logo1.gif"/>
 					</a>
 
 						<!-- button toggler for small screen devices -->
@@ -133,43 +133,34 @@
 </div>
 <!-- end of home -->
 
+<!-- start of enrol section -->
 <div style="margin-top: 9%; padding-bottom: 5%">
 <!-- start enrol form -->
 <form action="" style="margin: auto; width: 50%;" class="main-form needs-validation" novalidate="false">
 <h1 class="text-center">Enrol Now</h1>
 <div class="heading-underline"></div>
 
-<div class="row">
-	<div class="col">
+
 		<div class="form-group">
-	<label for="firstname">First Name</label>
-	<input type="text" name="firstname" class="form-control" required="true">
+	<label for="fullname">Full Name</label>
+	<input type="text" name="fullname" class="form-control" required="true">
 	<div class="invalid-feedback">invalid input</div>
 	</div>
-	</div>
 
-	<div class="col">
-		<div class="form-group">
-	<label for="lastname">Last Name</label>
-	<input type="text" name="lastname" class="form-control">
-	</div>
-	</div>
-</div>
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" name="phoneNumber" class="form-control">
+        </div>
 
-	<div class="form-group">
-	<label for="username">UserName</label>
-	<input type="text" name="username" class="form-control">
-	</div>
+          <div class="form-group">
+            <label for="drugAbused">Drug Abused</label>
+            <input type="text" name="drugAbused" class="form-control">
+        </div>
 
-<div class="form-group">
-	<label for="password">Password</label>
-	<input type="password" name="password" class="form-control">
-</div>
-
-<div class="form-group">
-	<label for="password">Password</label>
-	<input type="password" name="password" class="form-control">
-</div>
+        <div class="form-group">
+            <label for="location">Location (County)</label>
+            <input type="text" name="location" class="form-control">
+        </div>
 	
 	<div class="form-group">
 		<label for="gender">Gender</label>
@@ -179,16 +170,13 @@
 	</select>
 	</div>
 	
-	<div class="form-group">
-		<div class="form-check">
-		<input type="checkbox" id="accept-terms" class="form-check-input">
-		<label for="accept-terms" class="form-check-label">Accept terms &amp; Conditions </label>
-	</div>
-	</div>
+	
 	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
 <!-- end enrol form -->
 </div>
+<!-- end of enrol section -->
+
 
 	<!-- start Founders section -->
 	  <div id="Founders" class="offset">
@@ -218,6 +206,7 @@
 	  <!-- end Founders section -->
 
 
+
 <!-- start of contact -->
 <div id="contact" class="offset">
 <!-- start of footer -->
@@ -226,7 +215,7 @@
 
 <div class="col-md-5 text-center">
 	
-	<img src="Styles/image/logo1.gif">
+	<img src="dashboard/Styles/image/logo1.gif">
 	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
 <h3 class="ml-auto" style="color: black; font-weight: 700;">Quick Links</h3>
 
@@ -278,22 +267,39 @@
 <!-- end of contacts -->
 
 <!-- Scirpt source files -->
-	<script src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
-	<script src="Styles/bootStrap/js/popper.min.js"></script>
-	<script src="Styles/bootStrap/js/bootstrap.min.js"></script>
-	<script src="Styles/js/carousel.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/popper.min.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/bootstrap.min.js"></script>
+	<script src="dashboard/Styles/js/carousel.js"></script>
 
 	<script type="text/javascript">
- 	var form=document.querySelector('.needs-validation');
- 	form.addEventListener('submit',function(event){
- 		if (form.checkValidity === false) {
- 			event.preventDefault();
- 			event.stopPropagation();
- 		}else{
+ 
+ $(document).ready(function () {
 
- 		}
- 		form.classList.add('was-validated');
- 	})
+$('#contact-form').validate({
+    rules: {
+        name: {
+            minlength: 2,
+            required: true
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        message: {
+            minlength: 2,
+            required: true
+        }
+    },
+    highlight: function (element) {
+        $(element).closest('.control-group').removeClass('success').addClass('error');
+    },
+    success: function (element) {
+        element.text('OK!').addClass('valid')
+            .closest('.control-group').removeClass('error').addClass('success');
+    }
+});
+});
 	</script>
 <!-- end of script source files -->
 

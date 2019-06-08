@@ -8,7 +8,7 @@ $result=mysqli_query($connect,'select * from user_details where email="'.$email.
 
 if(mysqli_num_rows($result)>=1){
 	$_SESSION['email']=$email;
-	header('Location:dashboard/dashboard.html');
+	header('Location:dashboard/dashboard.php');
 }
 else{
 	echo "Account Invalid";
@@ -19,14 +19,14 @@ else{
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Login Sober Kenya</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width , initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
-		<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
-		<link rel="stylesheet"  type="text/css" href="Styles/css/login.css">
+		<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
+		<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">
+		<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/login.css">
 </head>
 <body>
 
@@ -37,7 +37,7 @@ else{
 		<div class="modal-content">
 
 			<div class="col-12 user-img">
-				<img src="Styles/image/d1.gif" >
+				<img src="dashboard/Styles/image/d1.gif" >
 			</div>
 			<!-- end of user image -->
 
@@ -71,10 +71,10 @@ else{
 </div>
 
 <!-- Scirpt source files -->
-	<script src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
-	<script src="Styles/bootStrap/js/popper.min.js"></script>
-	<script src="Styles/bootStrap/js/bootstrap.min.js"></script>
-	<script src="Styles/js/carousel.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/popper.min.js"></script>
+	<script src="dashboard/Styles/bootStrap/js/bootstrap.min.js"></script>
+	<script src="dashboard/Styles/js/carousel.js"></script>
 <!-- end of script source files -->
 
 </body>
