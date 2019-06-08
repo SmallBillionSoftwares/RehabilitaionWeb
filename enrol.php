@@ -41,40 +41,40 @@
 								</li>
 
 								<li class="nav-item">
-										<a class="nav-link" href="report.html">Report Abuse</a>
+										<a class="nav-link" href="report.php">Report Abuse</a>
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link active" href="enrol.html">Enrol</a>
+									<a class="nav-link active" href="enrol.php">Enrol</a>
 								</li>
 
 							<li class="nav-item">
-									<a class="nav-link" href="about.html">About</a>
+									<a class="nav-link" href="about.php">About</a>
 							</li>
 							<li class="nav-item">
-									<a class="nav-link" href="moreondrugs.html">More On Drugs</a>
+									<a class="nav-link" href="moreondrugs.php">More On Drugs</a>
 							</li>
 		
 									<li class="nav-item">
-								<a class="nav-link link1 hide" href="moreondrugs.html#Founders">Causes of Drug Abuse</a>
+								<a class="nav-link link1 hide" href="moreondrugs.php#Founders">Causes of Drug Abuse</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link link1 hide" href="moreondrugs.html#psychoDiv">Psychological effects</a>
+								<a class="nav-link link1 hide" href="moreondrugs.php#psychoDiv">Psychological effects</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link link1 hide" href="moreondrugs.html#effect">Physical Effects</a>
+								<a class="nav-link link1 hide" href="moreondrugs.php#effect">Physical Effects</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link  link1 hide" href="moreondrugs.html#effect"> Behavioral Effects</a>
+								<a class="nav-link  link1 hide" href="moreondrugs.php#effect"> Behavioral Effects</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link1 hide" href="moreondrugs.html#effect"> Effects on Unborn</a>
+								<a class="nav-link link1 hide" href="moreondrugs.php#effect"> Effects on Unborn</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link1 hide" href="moreondrugs.html#Location"> Health Effects</a>
+								<a class="nav-link link1 hide" href="moreondrugs.php#Location"> Health Effects</a>
 							</li>
 
 
@@ -103,25 +103,25 @@
 							<ul class="navbar-nav m-auto">
 								
 							<li class="nav-item">
-								<a class="nav-link link1" href="moreondrugs.html#Founders">Causes of Drug Abuse</a>
+								<a class="nav-link link1" href="moreondrugs.php#Founders">Causes of Drug Abuse</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link link1" href="moreondrugs.html#psychoDiv">Psychological effects</a>
+								<a class="nav-link link1" href="moreondrugs.php#psychoDiv">Psychological effects</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link link1" href="moreondrugs.html#effect">Physical Effects</a>
+								<a class="nav-link link1" href="moreondrugs.php#effect">Physical Effects</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link  link1" href="moreondrugs.html#effect"> Behavioral Effects</a>
+								<a class="nav-link  link1" href="moreondrugs.php#effect"> Behavioral Effects</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link1" href="moreondrugs.html#effect"> Effects on Unborn</a>
+								<a class="nav-link link1" href="moreondrugs.php#effect"> Effects on Unborn</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link1" href="moreondrugs.html#Location"> Health Effects</a>
+								<a class="nav-link link1" href="moreondrugs.php#Location"> Health Effects</a>
 							</li>
 
 							</ul>
@@ -234,16 +234,16 @@
 		
 		<div class="col-md-4 mr-auto">
 			<h4></h4>
-			<a href="about.html" class="footLink">Who are we</a><br>                              
-               <a href="moreondrugs.html#Founders">Recreational use abuse</a><br> 
-               <a href="moreondrugs.html#Location">General Health Effects</a><br> 
+			<a href="about.php" class="footLink">Who are we</a><br>
+               <a href="moreondrugs.php#Founders">Recreational use abuse</a><br>
+               <a href="moreondrugs.php#Location">General Health Effects</a><br>
               
 		</div>
 
       <div class="col-md-4 mr-auto">
-			<a href="enrol.html" class="footLink">Where to enrol</a><br>
-				 <a href="report.html" class="footLink">How to report</a><br>
-				  <a href="moreondrugs.html#effect">Effects on unborn</a><br> 
+			<a href="enrol.php" class="footLink">Where to enrol</a><br>
+				 <a href="report.php" class="footLink">How to report</a><br>
+				  <a href="moreondrugs.php#effect">Effects on unborn</a><br>
 		</div>
 
 		<div class="col-md-4">

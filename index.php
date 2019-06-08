@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 		<!-- remove -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -25,7 +25,7 @@
 				<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 					<a class="navbar-brand" href="#">
 						<!-- image logo -->
-						<img src="Styles/image/logo1.gif"/>
+						<img src="Styles/image/logo1.gif" alt="logo"/>
 					</a>
 
 						<!-- button toggler for small screen devices -->
@@ -38,44 +38,44 @@
 						<div class="collapse navbar-collapse" id="navbarResponsive">
 							<ul class="navbar-nav m-auto">
 								<li class="nav-item " >
-									<a class="nav-link active" href="index.html">Home</a>
+									<a class="nav-link active" href="index.php">Home</a>
 								</li>
 
 								<li class="nav-item">
-										<a class="nav-link" href="report.html">Report Abuse</a>
+										<a class="nav-link" href="report.php">Report Abuse</a>
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link" href="enrol.html">Enrol</a>
+									<a class="nav-link" href="enrol.php">Enrol</a>
 								</li>
 
 							<li class="nav-item">
-									<a class="nav-link" href="about.html">About</a>
+									<a class="nav-link" href="about.php">About</a>
 							</li>
 							<li class="nav-item">
-									<a class="nav-link" href="moreondrugs.html">More On Drugs</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link link1 hide" href="moreondrugs.html#Founders">Causes of Drug Abuse</a>
+									<a class="nav-link" href="moreondrugs.php">More On Drugs</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link link1 hide" href="moreondrugs.html#psychoDiv">Psychological effects</a>
+								<a class="nav-link link1 hide" href="moreondrugs.php#Founders">Causes of Drug Abuse</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link link1 hide" href="moreondrugs.html#effect">Physical Effects</a>
+								<a class="nav-link link1 hide" href="moreondrugs.php#psychoDiv">Psychological effects</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link  link1 hide" href="moreondrugs.html#effect"> Behavioral Effects</a>
+								<a class="nav-link link1 hide" href="moreondrugs.php#effect">Physical Effects</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link  link1 hide" href="moreondrugs.php#effect"> Behavioral Effects</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link1 hide" href="moreondrugs.html#effect"> Effects on Unborn</a>
+								<a class="nav-link link1 hide" href="moreondrugs.php#effect"> Effects on Unborn</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link1 hide" href="moreondrugs.html#Location"> Health Effects</a>
+								<a class="nav-link link1 hide" href="moreondrugs.php#Location"> Health Effects</a>
 							</li>
 
 							</ul>
@@ -103,25 +103,25 @@
 							<ul class="navbar-nav m-auto">
 								
 							<li class="nav-item">
-								<a class="nav-link link1" href="moreondrugs.html#Founders">Causes of Drug Abuse</a>
+								<a class="nav-link link1" href="moreondrugs.php#Founders">Causes of Drug Abuse</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link link1" href="moreondrugs.html#psychoDiv">Psychological effects</a>
+								<a class="nav-link link1" href="moreondrugs.php#psychoDiv">Psychological effects</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link link1" href="moreondrugs.html#effect">Physical Effects</a>
+								<a class="nav-link link1" href="moreondrugs.php#effect">Physical Effects</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link  link1" href="moreondrugs.html#effect"> Behavioral Effects</a>
+								<a class="nav-link  link1" href="moreondrugs.php#effect"> Behavioral Effects</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link1" href="moreondrugs.html#effect"> Effects on Unborn</a>
+								<a class="nav-link link1" href="moreondrugs.php#effect"> Effects on Unborn</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link1" href="moreondrugs.html#Location"> Health Effects</a>
+								<a class="nav-link link1" href="moreondrugs.php#Location"> Health Effects</a>
 							</li>
 
 							</ul>
@@ -218,7 +218,7 @@
                
                  <p>You must understand alcohol or drug addiction and their causes before you can overcome them. The factors that lead to substance abuse and addiction are different for each person. We explain how drugs affect your body, the reasons people turn to them and how to recover from alcoholism and other substance use disorders.</p>
                 
-                <a href="enrol.html" class="btn btn-outline-dark btn-lg" >Get Help Now </a>
+                <a href="enrol.php" class="btn btn-outline-dark btn-lg" >Get Help Now </a>
               
             </div>
 </div>
@@ -236,7 +236,7 @@
 
 <div class="col-md-5 text-center">
 	
-	<img src="Styles/image/logo1.gif">
+	<img src="Styles/image/logo1.gif" alt="logo">
 	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
 <h3 class="ml-auto" style="color: black; font-weight: 700;">Quick Links</h3>
 
@@ -244,16 +244,16 @@
 		
 		<div class="col-md-4 mr-auto">
 			<h4></h4>
-			<a href="about.html" class="footLink">Who are we</a><br>                              
-               <a href="moreondrugs.html#Founders">Recreational use abuse</a><br> 
-               <a href="moreondrugs.html#Location">General Health Effects</a><br> 
+			<a href="about.php" class="footLink">Who are we</a><br>
+               <a href="moreondrugs.php#Founders">Recreational use abuse</a><br>
+               <a href="moreondrugs.php#Location">General Health Effects</a><br>
               
 		</div>
 
       <div class="col-md-4 mr-auto">
-			<a href="enrol.html" class="footLink">Where to enrol</a><br>
-				 <a href="report.html" class="footLink">How to report</a><br>
-				  <a href="moreondrugs.html#effect">Effects on unborn</a><br> 
+			<a href="enrol.php" class="footLink">Where to enrol</a><br>
+				 <a href="report.php" class="footLink">How to report</a><br>
+				  <a href="moreondrugs.php#effect">Effects on unborn</a><br>
 		</div>
 
 		<div class="col-md-4">
@@ -291,7 +291,7 @@
 	<script src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
 	<script src="Styles/bootStrap/js/popper.min.js"></script>
 	<script src="Styles/bootStrap/js/bootstrap.min.js"></script>
-	<script src="Styles/js/activeNavabar.js"></script>
+	<script src="Styles/js/activeNavbar.js"></script>
 
 <!-- end of script source files -->
 

@@ -4,16 +4,15 @@ if(isset($_POST['loginbtn'])){
 require 'connection.php';	
 $email=$_POST['email'];
 $password=$_POST['password'];
-$result=mysqli_query($con,'select * from user_details where email="'.$email.'" and password="'.$password.'" ');
+$result=mysqli_query($connect,'select * from user_details where email="'.$email.'" and password="'.$password.'" ');
 
-if(mysqli_num_rows($result)==1){
+if(mysqli_num_rows($result)>=1){
 	$_SESSION['email']=$email;
-	header('Location:dashboard.html');
+	header('Location:dashboard/dashboard.html');
 }
 else{
 	echo "Account Invalid";
 }
-
 
 }
 
