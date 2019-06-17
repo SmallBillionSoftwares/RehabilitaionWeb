@@ -7,6 +7,7 @@
 	<!-- remove -->
 	<title> Sober kenya </title>
 	<meta  charset="utf-8">
+	<link rel="icon" type="image/png" href="dashboard/Styles/image/facon.png">
 	<meta name="viewport" content="width=device-width , initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
 	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">
@@ -147,7 +148,7 @@
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="dashboard/Styles/image/d06.gif" class="d-block w-100" alt="...">
+        <img src="dashboard/Styles/image/d06.gif" class="d-block w-100" alt="..." style="height:70vh;">
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -157,7 +158,7 @@
       <!-- end of first carousel -->
       
       <div class="carousel-item">
-        <img src="dashboard/Styles/image/d6.gif" class="d-block w-100" alt="...">
+        <img src="dashboard/Styles/image/d6.gif" class="d-block w-100" alt="..." style="height:70vh;">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -167,7 +168,7 @@
         <!-- end of first carousel -->
 
       <div class="carousel-item">
-        <img src="dashboard/Styles/image/d11.gif" class="d-block w-100" alt="...">
+        <img src="dashboard/Styles/image/d11.gif" class="d-block w-100" alt="..." style="height:70vh;">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

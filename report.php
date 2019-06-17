@@ -7,6 +7,7 @@
 	<!-- remove -->
 	<title>Report Abuse</title>
 	<meta  charset="utf-8">
+	<link rel="icon" type="image/png" href="dashboard/Styles/image/facon.png">
 	<meta name="viewport" content="width=device-width , initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
 	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">

@@ -23,6 +23,7 @@ else{
 <head>
 	<title>Login Sober Kenya</title>
 		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="dashboard/Styles/image/facon.png">
 		<meta name="viewport" content="width=device-width , initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
 		<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">
@@ -30,7 +31,7 @@ else{
 </head>
 <body>
 
-<div class="bg">
+<div class="bg" >
 
 <div class="modal-dialog text-center " >
 	<div class=" main-section">
@@ -44,10 +45,12 @@ else{
 			<div class="col-12 form-input">
 				<form method="post">
 					<div class="form-group">
+						<label>Email</label>
 						<input type="email" class="form-control" placeholder="Enter Email" name="email">
 					</div>
 
 					<div class="form-group">
+						<label>Password</label>
 						<input type="password" class="form-control" placeholder="Enter Password" name="password">
 					</div>
 
@@ -67,6 +70,9 @@ else{
 	
 </div>
 <!-- end modal dialog -->
+
+
+
 
 </div>
 
