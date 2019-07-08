@@ -461,7 +461,7 @@ Prescription drug abuse can be just as problematic as recreational drug abuse. M
 
 		<div class="col-md-4">
 				<strong>Contact</strong>
-		<p>9876546789<br> 
+		<p><a href="tel:9876546789">9876546789</a><br> 
 			<a href="mailto:soberkenya@info.com">soberkenya@info.com</a></p>
 
 		<!--social media fontawesome icons and links  -->
@@ -481,7 +481,8 @@ Prescription drug abuse can be just as problematic as recreational drug abuse. M
 <!-- end col-md-5 -->
 
 <hr class="socket">
-&copy; Sober Kenya. 2019
+                                       <!-- getting current year -->
+&copy; Sober Kenya. <script>document.write(new Date().getFullYear())</script>  
 
 </div>
 

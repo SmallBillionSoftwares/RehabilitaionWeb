@@ -1,17 +1,32 @@
 <?php
 
+//handles login button action
 if(isset($_POST['loginbtn'])){
-require 'connection.php';	
-$email=$_POST['email'];
-$password=$_POST['password'];
+
+require 'connection.php';	//getting connection to database
+$email=$_POST['email'];      //setting email variable from input field
+$password=$_POST['password'];  //setting password variable from input field
+
+$user_name="";      //used to store the username from database       
+
+//quering database
 $result=mysqli_query($connect,'select * from user_details where email="'.$email.'" and password="'.$password.'" ');
 
-if(mysqli_num_rows($result)>=1){
+//verifying user credentials from database
+if(mysqli_num_rows($result)==1){
+	//starting session
+	session_start();
+
+	//setting session variables
 	$_SESSION['email']=$email;
+	$_SESSION['password']=$password;
+
+	//redirecting user to dashboard page
 	header('Location:dashboard/dashboard.php');
 }
 else{
-	echo "Account Invalid";
+	//setting error message variable
+	$message="wrong email or password";
 }
 
 }
@@ -44,6 +59,7 @@ else{
 
 			<div class="col-12 form-input">
 				<form method="post">
+					<div class="text-danger"><?php if(isset($message)) {echo $message;} ?></div>
 					<div class="form-group">
 						<label>Email</label>
 						<input type="email" class="form-control" placeholder="Enter Email" name="email">
