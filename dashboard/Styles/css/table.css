@@ -1,0 +1,10 @@
+/*styliny table header*/
+table thead .thead .thead-dark{
+	color: #000;
+}
+
+/*style table body on haver*/
+table tbody tr .row:hover{
+	background-color: #000;
+	color: #fff;
+}
