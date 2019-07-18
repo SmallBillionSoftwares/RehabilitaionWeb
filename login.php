@@ -77,7 +77,7 @@ else{
 			</div> 
 			<!-- end of form input -->
 			<div class="col-12 forgot">
-				<a href="#">Forgot Password?</a>
+				<a href="#">Create an account</a>
 			</div>
 
 		</div>
