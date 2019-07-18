@@ -10,7 +10,8 @@ $password=$_POST['password'];  //setting password variable from input field
 $user_name="";      //used to store the username from database       
 
 //quering database
-$result=mysqli_query($connect,'select * from user_details where email="'.$email.'" and password="'.$password.'" ');
+$result=mysqli_query($connect,'select * from user_details 
+	where email="'.$email.'" and password="'.$password.'" ');
 
 //verifying user credentials from database
 if(mysqli_num_rows($result)==1){

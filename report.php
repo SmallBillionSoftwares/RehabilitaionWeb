@@ -138,12 +138,13 @@
 <!--start of report abuse form -->
 <div class="col-12 top-margin" style="margin-top: 9%; padding-bottom: 5%">
     <!-- start enrol form -->
-    <form action="" style="margin: auto; width: 50%;" class="main-form needs-validation" novalidate="false">
+    <form action="dashboard/insertReportAbuse.php" method="post" style="margin: auto; width: 50%;" 
+    class="main-form needs-validation" novalidate="false">
         <h1 class="text-center">Report Abuse</h1>
         <div class="heading-underline"></div>
 
       <div class="form-group">
-                    <label for="firstname">Full Names</label>
+                    <label for="fullname">Full Names</label>
                     <input type="text" name="fullname" class="form-control" required="true">
                     <div class="invalid-feedback">invalid input</div>
         </div>

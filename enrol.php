@@ -138,7 +138,7 @@
 <!-- start of enrol section -->
 <div style="margin-top: 9%; padding-bottom: 5%">
 <!-- start enrol form -->
-<form action="" style="margin: auto; width: 50%;" class="main-form needs-validation" novalidate="false">
+<form action="dashboard/insertEnrol.php" method="post" style="margin: auto; width: 50%;" class="main-form needs-validation" novalidate="false">
 <h1 class="text-center">Enrol Now</h1>
 <div class="heading-underline"></div>
 
