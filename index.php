@@ -9,12 +9,12 @@
 	<meta  charset="utf-8">
 	<link rel="icon" type="image/png" href="dashboard/Styles/image/facon.png">
 	<meta name="viewport" content="width=device-width , initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/about.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/navigationAndFooter.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/imageSlider.css">
-	<link rel="stylesheet" type="text/css" href="dashboard/icons/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/about.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/navigationAndFooter.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/imageSlider.css">
+	<link rel="stylesheet" type="text/css" href="icons/css/all.min.css">
 
 </head>
 
@@ -26,7 +26,7 @@
 				<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 					<a class="navbar-brand" href="#">
 						<!-- image logo -->
-						<img src="dashboard/Styles/image/logo1.gif" alt="logo"/>
+						<img src="Styles/image/logo1.gif" alt="logo"/>
 					</a>
 
 						<!-- button toggler for small screen devices -->
@@ -148,7 +148,7 @@
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="dashboard/Styles/image/d06.gif" class="d-block w-100" alt="..." style="height:70vh;">
+        <img src="Styles/image/d06.gif" class="d-block w-100" alt="..." style="height:70vh;">
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -158,7 +158,7 @@
       <!-- end of first carousel -->
       
       <div class="carousel-item">
-        <img src="dashboard/Styles/image/d6.gif" class="d-block w-100" alt="..." style="height:70vh;">
+        <img src="Styles/image/d6.gif" class="d-block w-100" alt="..." style="height:70vh;">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -168,7 +168,7 @@
         <!-- end of first carousel -->
 
       <div class="carousel-item">
-        <img src="dashboard/Styles/image/d11.gif" class="d-block w-100" alt="..." style="height:70vh;">
+        <img src="Styles/image/d11.gif" class="d-block w-100" alt="..." style="height:70vh;">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -237,7 +237,7 @@
 
 <div class="col-md-5 text-center">
 	
-	<img src="dashboard/Styles/image/logo1.gif" alt="logo">
+	<img src="Styles/image/logo1.gif" alt="logo">
 	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
 <h3 class="ml-auto" style="color: black; font-weight: 700;">Quick Links</h3>
 
@@ -289,10 +289,10 @@
 <!-- end of contacts -->
 
 <!-- Scirpt source files -->
-	<script src="dashboard/Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
-	<script src="dashboard/Styles/bootStrap/js/popper.min.js"></script>
-	<script src="dashboard/Styles/bootStrap/js/bootstrap.min.js"></script>
-	<script src="dashboard/Styles/js/activeNavbar.js"></script>
+	<script src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="Styles/bootStrap/js/popper.min.js"></script>
+	<script src="Styles/bootStrap/js/bootstrap.min.js"></script>
+	<script src="Styles/js/activeNavbar.js"></script>
 
 <!-- end of script source files -->
 

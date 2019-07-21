@@ -385,28 +385,28 @@ require 'checkLogin.php';
                 <nav class="pull-left">
                     <ul>
                         <li>
-                            <a href="../index.php">
+                            <a href="index.php">
                                 Home
                             </a>
                         </li>
 
                           <li>
-                            <a href="../enrol.php">
+                            <a href="enrol.php">
                                Enrol
                             </a>
                         </li>
                         <li>
-                            <a href="../report.php">
+                            <a href="report.php">
                                Report Abuse
                             </a>
                         </li>
                         <li>
-                            <a href="../about.php">
+                            <a href="about.php">
                                About
                             </a>
                         </li>
                         <li>
-                            <a href="../moreondrugs.php">
+                            <a href="moreondrugs.php">
                                More on Drugs
                             </a>
                         </li>

@@ -8,14 +8,14 @@
 	<title>Enrol to rehab</title>
 
 	<meta  charset="utf-8">
-	<link rel="icon" type="image/png" href="dashboard/Styles/image/facon.png">
+	<link rel="icon" type="image/png" href="Styles/image/facon.png">
 	<meta name="viewport" content="width=device-width , initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/about.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/navigationAndFooter.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/imageSlider.css">
-	<link rel="stylesheet" type="text/css" href="dashboard/icons/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/about.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/navigationAndFooter.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/imageSlider.css">
+	<link rel="stylesheet" type="text/css" href="icons/css/all.min.css">
 </head>
 <body>
 
@@ -26,7 +26,7 @@
 				<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 					<a class="navbar-brand" href="#">
 						<!-- image logo -->
-						<img src="dashboard/Styles/image/logo1.gif"/>
+						<img src="Styles/image/logo1.gif"/>
 					</a>
 
 						<!-- button toggler for small screen devices -->
@@ -138,7 +138,7 @@
 <!-- start of enrol section -->
 <div style="margin-top: 9%; padding-bottom: 5%">
 <!-- start enrol form -->
-<form action="dashboard/insertEnrol.php" method="post" style="margin: auto; width: 50%;" class="main-form needs-validation" novalidate="false">
+<form action="insertEnrol.php" method="post" style="margin: auto; width: 50%;" class="main-form needs-validation" novalidate="false">
 <h1 class="text-center">Enrol Now</h1>
 <div class="heading-underline"></div>
 
@@ -217,7 +217,7 @@
 
 <div class="col-md-5 text-center">
 	
-	<img src="dashboard/Styles/image/logo1.gif">
+	<img src="Styles/image/logo1.gif">
 	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
 <h3 class="ml-auto" style="color: black; font-weight: 700;">Quick Links</h3>
 
@@ -269,10 +269,10 @@
 <!-- end of contacts -->
 
 <!-- Scirpt source files -->
-	<script src="dashboard/Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
-	<script src="dashboard/Styles/bootStrap/js/popper.min.js"></script>
-	<script src="dashboard/Styles/bootStrap/js/bootstrap.min.js"></script>
-	<script src="dashboard/Styles/js/carousel.js"></script>
+	<script src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="Styles/bootStrap/js/popper.min.js"></script>
+	<script src="Styles/bootStrap/js/bootstrap.min.js"></script>
+	<script src="Styles/js/carousel.js"></script>
 
 	<script type="text/javascript">
  

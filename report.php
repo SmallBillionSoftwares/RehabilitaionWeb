@@ -7,7 +7,7 @@
 	<!-- remove -->
 	<title>Report Abuse</title>
 	<meta  charset="utf-8">
-	<link rel="icon" type="image/png" href="dashboard/Styles/image/facon.png">
+	<link rel="icon" type="image/png" href="Styles/image/facon.png">
 	<meta name="viewport" content="width=device-width , initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
 	<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
@@ -26,7 +26,7 @@
 				<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 					<a class="navbar-brand" href="#">
 						<!-- image logo -->
-						<img src="dashboard/Styles/image/logo1.gif"/>
+						<img src="Styles/image/logo1.gif"/>
 					</a>
 
 						<!-- button toggler for small screen devices -->
@@ -138,7 +138,7 @@
 <!--start of report abuse form -->
 <div class="col-12 top-margin" style="margin-top: 9%; padding-bottom: 5%">
     <!-- start enrol form -->
-    <form action="dashboard/insertReportAbuse.php" method="post" style="margin: auto; width: 50%;" 
+    <form action="insertReportAbuse.php" method="post" style="margin: auto; width: 50%;" 
     class="main-form needs-validation" novalidate="false">
         <h1 class="text-center">Report Abuse</h1>
         <div class="heading-underline"></div>
@@ -217,7 +217,7 @@
 
 <div class="col-md-5 text-center">
 	
-	<img src="dashboard/Styles/image/logo1.gif">
+	<img src="Styles/image/logo1.gif">
 	<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
 <h3 class="ml-auto" style="color: black; font-weight: 700;">Quick Links</h3>
 
