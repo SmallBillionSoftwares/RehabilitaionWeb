@@ -22,6 +22,11 @@ if(mysqli_num_rows($result)==1){
 	$_SESSION['email']=$email;
 	$_SESSION['password']=$password;
 
+	//getting user name
+	while ($row = $result-> fetch_assoc()) {
+		$_SESSION['user']=$row["user_name"];
+	}
+
 	//redirecting user to dashboard page
 	header('Location:dashboard.php');
 }
@@ -41,9 +46,9 @@ else{
 		<meta charset="utf-8">
 		<link rel="icon" type="image/png" href="dashboard/Styles/image/facon.png">
 		<meta name="viewport" content="width=device-width , initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
-		<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">
-		<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/login.css">
+		<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
+		<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
+		<link rel="stylesheet"  type="text/css" href="Styles/css/login.css">
 </head>
 <body>
 
@@ -54,7 +59,7 @@ else{
 		<div class="modal-content">
 
 			<div class="col-12 user-img">
-				<img src="dashboard/Styles/image/d1.gif" >
+				<img src="Styles/image/d1.gif" >
 			</div>
 			<!-- end of user image -->
 
@@ -77,7 +82,7 @@ else{
 			</div> 
 			<!-- end of form input -->
 			<div class="col-12 forgot">
-				<a href="#">Create an account</a>
+				<a href="signUp.php">Create an account</a>
 			</div>
 
 		</div>
