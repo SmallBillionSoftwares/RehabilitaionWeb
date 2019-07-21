@@ -9,13 +9,13 @@
 	<meta  charset="utf-8">
 	<link rel="icon" type="image/png" href="dashboard/Styles/image/facon.png">
 	<meta name="viewport" content="width=device-width , initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="dashboard/Styles/bootStrap/css/bootstrap.min.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/fixed.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/about.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/navigationAndFooter.css">
-	<link rel="stylesheet"  type="text/css" href="dashboard/Styles/css/imageSlider.css">
-	<link rel="stylesheet" type="text/css" href="dashboard/icons/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="dashboard/Styles/css/forms.css">
+	<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/about.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/navigationAndFooter.css">
+	<link rel="stylesheet"  type="text/css" href="Styles/css/imageSlider.css">
+	<link rel="stylesheet" type="text/css" href="icons/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="Styles/css/forms.css">
 </head>
 <body>
 
@@ -269,10 +269,10 @@
 <!-- end of contacts -->
 
 <!-- Scirpt source files -->
-	<script src="dashboard/Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
-	<script src="dashboard/Styles/bootStrap/js/popper.min.js"></script>
-	<script src="dashboard/Styles/bootStrap/js/bootstrap.min.js"></script>
-	<script src="dashboard/Styles/js/activeNavabar.js"></script>
+	<scStyles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
+	<scStyles/bootStrap/js/popper.min.js"></script>
+	<scStyles/bootStrap/js/bootstrap.min.js"></script>
+	<scStyles/js/activeNavabar.js"></script>
 <!-- end of script source files -->
 
 <!-- remove -->

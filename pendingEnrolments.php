@@ -41,11 +41,74 @@ require 'checkLogin.php';
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/image.css">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="../dashboard/Styles/css/image.css">
+    <link rel="stylesheet" type="text/css" href="../dashboard/Styles/css/table.css">
 
 </head>
 <body>
+
+    <!-- pop up Modal for edit-->
+<!-- ######################################################################################################### -->
+<div class="modal fade"   id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Edit Pending Enrollements</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <!-- start enrol form -->
+    <form action="" method="post" style="margin: auto; width:70%; " 
+    class="main-form needs-validation" novalidate="false">
+    <input type="hidden" name="up_date" id="up_date">
+         <div class="form-group">
+                    <label for="id">Id</label>
+                    <input type="text" id="id" disabled="true" name="id" class="form-control" required="true">
+                    
+        </div>
+      <div class="form-group">
+                    <label for="name">Full Names</label>
+                    <input type="text" name="name" id="name" class="form-control" required="true">
+                   
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" class="form-control">
+        </div>
+
+          <div class="form-group">
+            <label for="drugAbused">Drug Abused</label>
+            <input type="text" name="drugAbused" id="drugAbused" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location (County)</label>
+            <input type="text" id="location" name="location" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" class="form-control">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+  <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </form>
+    <!-- end report form -->
+    </div>
+    </div>
+  </div>
+</div>
+<!-- ########################################################################################### -->
+
 
 <div class="wrapper">
 
@@ -184,64 +247,9 @@ require 'checkLogin.php';
                             </div>            
                             </div>
 
-<!-- pop up Modal for edit-->
-<!-- ######################################################################################################### -->
-<div class="modal" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Edit Pending Enrollements</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-            <!-- start enrol form -->
-    <form action=" " method="post" style="margin: auto; width:70%; " 
-    class="main-form needs-validation" novalidate="false">
-    
-      <div class="form-group">
-                    <label for="fullname">Full Names</label>
-                    <input type="text" name="fullname" class="form-control" required="true">
-                    <div class="invalid-feedback">invalid input</div>
-        </div>
+<!-- demo -->
 
-        <div class="form-group">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="text" name="phoneNumber" class="form-control">
-        </div>
-
-          <div class="form-group">
-            <label for="drugAbused">Drug Abused</label>
-            <input type="text" name="drugAbused" class="form-control">
-        </div>
-
-        <div class="form-group">
-            <label for="location">Location (County)</label>
-            <input type="text" name="location" class="form-control">
-        </div>
-
-        <div class="form-group">
-            <label for="gender">Gender</label>
-            <select name="gender" id="gender" class="form-control">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-        </div>
-
-  <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </form>
-    <!-- end report form -->
-    </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ########################################################################################### -->
+<!-- demo -->
 
                             <!-- start of table  container-->
                             <div class="table-responsive">
@@ -259,7 +267,7 @@ require 'checkLogin.php';
                                 </thead>
                                     <?php
                                         // getting connection
-                                        require '../connection.php';
+                                        require 'connection.php';
 
                                         //sql query
                                         $sql="SELECT id,name,phone,drug,location,gender FROM pending_enrol";
@@ -269,23 +277,23 @@ require 'checkLogin.php';
 
                                         // check results if its empty
                                         if ($result-> num_rows >0) {
-                                            echo "<tbody>";
+                                            
                                             // looping through the results
                                             while ($row = $result-> fetch_assoc()) {
 
                                                 //adding values to the table 
-                                                echo "<tr><th class='row'>".$row["id"]."</th><td>".$row["name"]."</td><td>".$row["phone"]."</td><td>".$row["drug"]."</td><td>"
+                                                echo "<tr><td class='row'>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["phone"]."</td><td>".$row["drug"]."</td><td>"
                                                 .$row["location"]."</td><td>".$row["gender"]."</td>
                                                     
                                                 <td> 
-                                                <button type='button'  class='btn btn-primary editbtn' data-toggle='modal' data-target='#exampleModalLong'> EDIT</button>
-                                                <button type='button' class='btn btn-danger editbtn'> DELETE</button>
+                 <button type='button' id='editbtn' data-toggle='modal'class='btn btn-primary editbtn' data-target='#exampleModalLong'> EDIT</button>
+                                                <button type='button' class='btn btn-danger'> DELETE</button>
                                                 <button type='button' class='btn btn-success'> APPROVED </button>
                                                 </td>
                                                 </tr>";
                                             }
-                                            echo "</tbody>";
-                                            echo "</table>";
+                                           
+                                      
                                         }else{
 
                                              //results is empty 
@@ -295,15 +303,7 @@ require 'checkLogin.php';
                                         //closing connection
                                         $connect->close();
                                     ?>
-                                <script  type="text/javascript">
-    
-    $(document).ready(function{
-        $('.editbtn').on('click', function(){
-            $('#exampleModalLong').modal('show');
-        });
-    });
-
-</script>
+       
                                 </table>    
                             </div>
                             <!-- end of table container-->
@@ -359,9 +359,8 @@ require 'checkLogin.php';
 </div>
 
 
-</body>
 
-   <!--   Core JS Files   -->
+    <!--   Core JS Files   -->
     <script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
@@ -370,26 +369,78 @@ require 'checkLogin.php';
 
     <!--  Notifications Plugin    -->
     <script src="assets/js/bootstrap-notify.js"></script>
-
-    <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-
-    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+ <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
     <script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
-    <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-    <script src="assets/js/demo.js"></script>
-
-    
 <!-- Scirpt source files -->
-    <script src="dashboard/Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="dashboard/Styles/bootStrap/js/popper.min.js"></script>
-    <script src="dashboard/Styles/bootStrap/js/bootstrap.min.js"></script>
-    <script src="dashboard/Styles/js/activeNavbar.js"></script>
+    <script src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="Styles/bootStrap/js/popper.min.js"></script>
+    <script src="Styles/bootStrap/js/bootstrap.min.js"></script>
 
 <!-- end of script source files -->
 
 <!-- for modal popup -->
+
+  <script  type="text/javascript">
+
+    
+    $(document).ready( function () {
+        $('#editbtn').on('click', function(){
+           
+
+
+            $(document).on('click','.editbtn',function(){
+
+                var detail= $(this).attr("id");
+                $.ajax({
+                    url:"fecth.php",
+                    method:"POST",
+                    data:{detail,detail},
+                    dataType:"json",
+                    success:function(data){
+                        $('#id').val(data.id);
+                         $('#name').val(data.name);
+                        $('#phoneNumber').val(data.phoneNumber);
+                        $('#drugAbused').val(data.drugAbused);
+                        $('#location').val(data.location);
+                        $('#gender').val(data.gender);
+                          $('#editbtn').val("Update");
+
+                           $('#exampleModalLong').modal('show');
+                    }
+
+                })
+            });
+
+
+
+
+            // $tr = $(this).closest("tr");
+
+            // var data=$tr.children("td").map(function(){
+            //      return $(this).text();
+            // }).get();
+
+            // console.log(data);
+    
+            //  $('#id').val(data.id);
+            //  $('#name').val(data.name);
+            // $('#phoneNumber').val(data[2]);
+            // $('#drugAbused').val(data[3]);
+            // $('#location').val(data[4]);
+            // $('#gender').val(data[5]);
+
+        });
+    });
+
+</script>
+
+
+</body>
+
+<!--  -->
+
+    
 
 
 </html>

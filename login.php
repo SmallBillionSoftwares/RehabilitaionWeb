@@ -23,7 +23,7 @@ if(mysqli_num_rows($result)==1){
 	$_SESSION['password']=$password;
 
 	//redirecting user to dashboard page
-	header('Location:dashboard/dashboard.php');
+	header('Location:dashboard.php');
 }
 else{
 	//setting error message variable
