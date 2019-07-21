@@ -44,7 +44,7 @@ else{
 <head>
 	<title>Login Sober Kenya</title>
 		<meta charset="utf-8">
-		<link rel="icon" type="image/png" href="dashboard/Styles/image/facon.png">
+		<link rel="icon" type="image/png" href="Styles/image/facon.png">
 		<meta name="viewport" content="width=device-width , initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="Styles/bootStrap/css/bootstrap.min.css">
 		<link rel="stylesheet"  type="text/css" href="Styles/css/fixed.css">
@@ -99,10 +99,10 @@ else{
 </div>
 
 <!-- Scirpt source files -->
-	<script src="dashboard/Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
-	<script src="dashboard/Styles/bootStrap/js/popper.min.js"></script>
-	<script src="dashboard/Styles/bootStrap/js/bootstrap.min.js"></script>
-	<script src="dashboard/Styles/js/carousel.js"></script>
+	<script src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="Styles/bootStrap/js/popper.min.js"></script>
+	<script src="Styles/bootStrap/js/bootstrap.min.js"></script>
+	<script src="Styles/js/carousel.js"></script>
 <!-- end of script source files -->
 
 </body>
