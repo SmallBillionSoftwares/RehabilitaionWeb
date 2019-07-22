@@ -146,7 +146,7 @@ require 'checkLogin.php';
           <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <p>
-                                        usersName
+                                         <?php echo $_SESSION['user']; ?>
                                          <img class="img-profile rounded-circle" src="Styles/image/bmw.jpg"  
                 style="border-radius:50%; width:30px;height:30px; ">
                                         

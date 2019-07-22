@@ -1,11 +1,35 @@
 <?php
 
-if (isset($_POST[''])) {
-	
-	
+//handles login button action
+if(isset($_POST['signupbtn'])){
+
+$message="";
+
+require 'connection.php';	//getting connection to database
+$email=$_POST['email'];      //setting email variable from input field
+$password=$_POST['password'];  //setting password variable from input field
+
+$confirm_password=$_POST['confirmpassword'];  
+$phone=$_POST['confirmpassword'];  
+$user_name=$_POST['user'];      //used to store the username from database       
+
+$sql="INSERT INTO user_details (user_name, email, password, user_id) 
+VALUES ('$user_name', '$email', '$password', NULL);";
+
+if ($password == $confirm_password) {
+
+if(mysqli_query($connect,$sql)){
+
+	//redirecting user to dashboard page
+	header('Location:login.php');
+}
+
+}else{
+	$message="password do not match";
+}
+
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +55,7 @@ if (isset($_POST[''])) {
 			<!-- end of user image -->
 
 			<div class="col-12 form-input">
-				<form method="post">
+				<form action="signUp.php" method="post">
 					<div class="text-success"><?php if(isset($message)) {echo $message;} ?></div>
 					<div class="form-group">
 						<label>User Name</label>
@@ -48,7 +72,7 @@ if (isset($_POST[''])) {
 					</div>
 					<div class="form-group">
 						<label>Confirm Password</label>
-						<input type="password" class="form-control" placeholder="Enter Password" name="confirmpassword">
+						<input type="password" class="form-control" placeholder="ConfirmPassword" name="confirmpassword">
 					</div>
 
 					<button type="submit"name="signupbtn" class="btn btn-success" href="index">Sign Up</button>

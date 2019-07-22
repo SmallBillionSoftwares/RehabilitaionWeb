@@ -208,85 +208,10 @@ Sober Kenya does................................ Lorem Ipsum is simply dummy tex
     <!-- end Location section -->
 
 
-
-	<!-- start Founders section -->
-	  <div id="Founders" class="offset">
-
-			<!--  start jumbotorn -->
-			<div class="jumbotron">
-					<!-- start the row -->
-				<div class="row text-center">
-
-					<div class="col-12 text-center">
-						<h3 class="heading"> Founders of Sober Kenya</h3>
-						<div class="heading-underline"></div>
-					</div>
-
-          <div class="col-md-4 founder">
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="Styles/image/d1.gif">
-                </div>
-                <div class="col-md-8">
-                   <blockquote>
-                       <i class="fa fa-quote-left" aria-hidden="true"></i>
-                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                       when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    <hr class="founder-hr">
-                   <cite>&#8212; name iuyhgjklkjh</cite>
-                      </blockquote>
-                </div>
-
-              </div>
-            </div>
-
-						<div class="col-md-4 founder">
-							<div class="row">
-								<div class="col-md-4">
-									<img src="Styles/image/d1.gif">
-								</div>
-								<div class="col-md-8">
-									 <blockquote>
-											 <i class="fa fa-quote-left" aria-hidden="true"></i>
-											 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-											 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-										<hr class="founder-hr">
-									 <cite>&#8212; name iuyhgjklkjh</cite>
-											</blockquote>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="col-md-4 founder">
-								<div class="row">
-									<div class="col-md-4">
-										<img src="Styles/image/d1.gif">
-									</div>
-									<div class="col-md-8">
-										 <blockquote>
-												 <i class="fa fa-quote-left" aria-hidden="true"></i>
-												 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-												 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-											<hr class="founder-hr">
-										 <cite>&#8212; name iuyhgjklkjh</cite>
-												</blockquote>
-									</div>
-
-								</div>
-							</div>
-
-				</div><!-- end the row -->
-			</div>
-			<!-- end jumbotron -->
-	 </div>
-	  <!-- end Founders section -->
-
-
 <!-- start founder cards  -->
 <div id="team">
 	<div class="col-12 text-center">
-	<h3 class="heading"> Founders</h3>
+	<h3 class="heading"> Founders of Sober Kenya</h3>
 	<div class="heading-underline"></div>
 	</div>
 	<div class="row padding">

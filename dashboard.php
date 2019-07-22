@@ -1,10 +1,17 @@
 <?php 
 
 require 'checkLogin.php';
+require 'connection.php';
+
+
+$total=0;
+$total1=0;
+$total2=0;
+  
 
  ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -18,13 +25,9 @@ require 'checkLogin.php';
 
     <!-- fontawesome icons -->
     <link rel="stylesheet" type="text/css" href="icons/css/all.min.css">
- 
 
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Animation library for notifications   -->
-    <!-- <link href="assets/css/animate.min.css" rel="stylesheet"/> -->
 
     <!--  Light Bootstrap Table core CSS    -->
     <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
@@ -42,6 +45,143 @@ require 'checkLogin.php';
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/image.css">
+     <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+     <script type="text/javascript" src="Styles/js/loader.js"></script>
+
+     <!-- pending enrollments chart -->
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Gender', 'Number of gender'],
+
+        <?php 
+
+         //sql query
+     $sql="SELECT gender, COUNT(id) AS count
+FROM pending_enrol
+GROUP BY gender";
+                                       
+          // quering database
+     $result=$connect->query($sql);
+
+ // check results if its empty
+ if ($result-> num_rows >0) {
+                    $total=0;                        
+       // looping through the results
+       while ($row = $result-> fetch_assoc()) {
+echo "['".$row['gender']."',".$row['count']."],";
+$total+=$row['count'];
+       }
+   }
+       ?>
+            
+        ]);
+
+        var options = {
+          title: 'Total Number <?php echo $total; ?>',
+           pieHole: 0.4,
+          
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+
+                <!-- Abuse reports chart -->
+        <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Gender', 'Number of gender'],
+
+        <?php 
+
+         //sql query
+     $sql="SELECT gender, COUNT(id) AS count
+FROM report_abuse
+GROUP BY gender";
+                                       
+          // quering database
+     $result=$connect->query($sql);
+
+ // check results if its empty
+ if ($result-> num_rows >0) {
+             $total1=0;                               
+       // looping through the results
+       while ($row = $result-> fetch_assoc()) {
+echo "['".$row['gender']."',".$row['count']."],";
+$total1+=$row['count'];
+       }
+   }
+       ?>
+            
+        ]);
+
+        var options = {
+           title: 'Total Number <?php echo $total1; ?>',
+        legend: 'none',
+          pieSliceText: 'label',
+          slices: {  0: {offset: 0.1
+                    },
+           1: {offset: 0.2},
+          },
+
+is3D: true,
+ 
+        
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d1'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <!-- Approved enrollments chart  -->
+        <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Gender', 'Number of gender'],
+
+        <?php 
+
+         //sql query
+     $sql="SELECT gender, COUNT(id) AS count
+FROM approved_enrol
+GROUP BY gender";
+                                       
+          // quering database
+     $result=$connect->query($sql);
+
+ // check results if its empty
+ if ($result-> num_rows >0) {
+                $total2=0;                            
+       // looping through the results
+       while ($row = $result-> fetch_assoc()) {
+echo "['".$row['gender']."',".$row['count']."],";
+$total2+=$row['count'];
+       }
+   }
+       ?>
+            
+        ]);
+
+        var options = {
+           title: 'Total Number <?php echo $total2; ?>',
+          title: '',
+           is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d2'));
+        chart.draw(data, options);
+      }
+    </script>
 
 </head>
 <body>
@@ -147,7 +287,7 @@ require 'checkLogin.php';
           <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <p>
-                                        <?php echo $_SESSION['email']; ?>
+                                        <?php echo $_SESSION['user']; ?>
                                          <img class="img-profile rounded-circle" src="Styles/image/bmw.jpg"  
                 style="border-radius:50%; width:30px;height:30px; ">
                                         
@@ -172,206 +312,54 @@ require 'checkLogin.php';
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card">
 
                             <div class="header">
-                                <h4 class="title">Email Statistics</h4>
-                                <p class="category">Last Campaign Performance</p>
+                                <h4 class="title">Abuse Report</h4>  
                             </div>
-                            <div class="content">
-                                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
 
-                                <div class="footer">
-                                    <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> Open
-                                        <i class="fa fa-circle text-danger"></i> Bounce
-                                        <i class="fa fa-circle text-warning"></i> Unsubscribe
-                                    </div>
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
-                                    </div>
-                                </div>
+
+                            <div class="content">
+
+                                <div id="piechart_3d1" style="width: 400px; height: 300px;" ></div>
+            
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col-md-6">
+                        <div class="card">
+
+                            <div class="header">
+                                <h4 class="title">Approved  Enrolment</h4>  
+                            </div>
+
+
+                            <div class="content">
+
+                                <div id="piechart_3d2" style="width: 400px; height: 300px;" ></div>
+            
                             </div>
                         </div>
                     </div>
 
 
-
-                    <div class="col-md-8">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Users Behavior</h4>
-                                <p class="category">24 Hours performance</p>
-                            </div>
-                            <div class="content">
-                                <div id="chartHours" class="ct-chart"></div>
-                                <div class="footer">
-                                    <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> Open
-                                        <i class="fa fa-circle text-danger"></i> Click
-                                        <i class="fa fa-circle text-warning"></i> Click Second Time
-                                    </div>
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="fa fa-history"></i> Updated 3 minutes ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                    
+           
 
 
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="card ">
-                            <div class="header">
-                                <h4 class="title">2014 Sales</h4>
-                                <p class="category">All products including Taxes</p>
-                            </div>
-                            <div class="content">
-                                <div id="chartActivity" class="ct-chart"></div>
-
-                                <div class="footer">
-                                    <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> Tesla Model S
-                                        <i class="fa fa-circle text-danger"></i> BMW 5 Series
-                                    </div>
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="fa fa-check"></i> Data information certified
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
 
                     <div class="col-md-6">
                         <div class="card ">
                             <div class="header">
-                                <h4 class="title">Tasks</h4>
-                                <p class="category">Backend development</p>
+                                <h4 class="title">Pending Enrollements</h4>
                             </div>
                             <div class="content">
-                                <div class="table-full-width">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-													<div class="checkbox">
-						  							  	<input id="checkbox1" type="checkbox">
-						  							  	<label for="checkbox1"></label>
-					  						  		</div>
-                                                </td>
-                                                <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-													<div class="checkbox">
-						  							  	<input id="checkbox2" type="checkbox" checked>
-						  							  	<label for="checkbox2"></label>
-					  						  		</div>
-                                                </td>
-                                                <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-													<div class="checkbox">
-						  							  	<input id="checkbox3" type="checkbox">
-						  							  	<label for="checkbox3"></label>
-					  						  		</div>
-                                                </td>
-                                                <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
-												</td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-													<div class="checkbox">
-						  							  	<input id="checkbox4" type="checkbox" checked>
-						  							  	<label for="checkbox4"></label>
-					  						  		</div>
-                                                </td>
-                                                <td>Create 4 Invisible User Experiences you Never Knew About</td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-													<div class="checkbox">
-						  							  	<input id="checkbox5" type="checkbox">
-						  							  	<label for="checkbox5"></label>
-					  						  		</div>
-                                                </td>
-                                                <td>Read "Following makes Medium better"</td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-													<div class="checkbox">
-						  							  	<input id="checkbox6" type="checkbox" checked>
-						  							  	<label for="checkbox6"></label>
-					  						  		</div>
-                                                </td>
-                                                <td>Unfollow 5 enemies from twitter</td>
-                                                <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <div class="footer">
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="fa fa-history"></i> Updated 3 minutes ago
-                                    </div>
-                                </div>
+                              <div id="piechart_3d" style="width: 400px; height: 300px;" ></div>
+                                   
                             </div>
                         </div>
                     </div>
@@ -442,7 +430,4 @@ require 'checkLogin.php';
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
-
-	
-
 </html>

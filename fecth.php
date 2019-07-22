@@ -1,5 +1,5 @@
 <?php
-require '../connection.php';
+require 'connection.php';
 
 
 if (isset($_POST['id'])) {

@@ -4,7 +4,7 @@ require 'checkLogin.php';
 
  ?>
 
- <!doctype html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -22,10 +22,7 @@ require 'checkLogin.php';
 
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Animation library for notifications   -->
-    <!-- <link href="assets/css/animate.min.css" rel="stylesheet"/> -->
-
+    
     <!--  Light Bootstrap Table core CSS    -->
     <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
 
@@ -38,14 +35,23 @@ require 'checkLogin.php';
 
 
     <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+   <!--  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'> -->
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../dashboard/Styles/css/image.css">
-    <link rel="stylesheet" type="text/css" href="../dashboard/Styles/css/table.css">
+    <link rel="stylesheet" type="text/css" href="Styles/css/image.css">
+    <link rel="stylesheet" type="text/css" href="Styles/css/table.css">
 
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   
+    <script type="text/javascript" src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
+     <script src="Styles/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Styles/js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="Styles/js/jquery.tabledit.js"></script>
+    <script type="text/javascript" src="jquery.tabledit.js"></script>
+    <link rel="stylesheet" type="text/css" href="icons/css/all.min.css">
 </head>
-<body>
+<body style="background-color: white;">
 
     <!-- pop up Modal for edit-->
 <!-- ######################################################################################################### -->
@@ -211,7 +217,7 @@ require 'checkLogin.php';
           <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <p>
-                                        usersName
+                                         <?php echo $_SESSION['user']; ?>
                                          <img class="img-profile rounded-circle" src="Styles/image/bmw.jpg"  
                 style="border-radius:50%; width:30px;height:30px; ">
                                         
@@ -243,7 +249,7 @@ require 'checkLogin.php';
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Pending Enrollements</h4>
+                                <h4 class="title">Pending Enrollements Details</h4>
                             </div>            
                             </div>
 
@@ -253,7 +259,7 @@ require 'checkLogin.php';
 
                             <!-- start of table  container-->
                             <div class="table-responsive">
-                                <table class="table table-striped">
+                                <table id="editable_table" class="table table-bordered table-striped">
                                   <thead class="thead thead-dark">
                                     <tr>
                                         <th>Id</th>
@@ -262,7 +268,7 @@ require 'checkLogin.php';
                                         <th>Drug Abused</th>
                                          <th>Location</th>
                                          <th>Gender</th>
-                                         <th>Actions</th>
+                                         
                                     </tr>
                                 </thead>
                                     <?php
@@ -285,11 +291,7 @@ require 'checkLogin.php';
                                                 echo "<tr><td class='row'>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["phone"]."</td><td>".$row["drug"]."</td><td>"
                                                 .$row["location"]."</td><td>".$row["gender"]."</td>
                                                     
-                                                <td> 
-                 <button type='button' id='editbtn' data-toggle='modal'class='btn btn-primary editbtn' data-target='#exampleModalLong'> EDIT</button>
-                                                <button type='button' class='btn btn-danger'> DELETE</button>
-                                                <button type='button' class='btn btn-success'> APPROVED </button>
-                                                </td>
+                
                                                 </tr>";
                                             }
                                            
@@ -310,50 +312,11 @@ require 'checkLogin.php';
 
                         </div>
                     </div>
-                </div>
-
-             
+                </div>           
             </div>
         </div>
 
-
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="index.php">
-                                Home
-                            </a>
-                        </li>
-
-                          <li>
-                            <a href="enrol.php">
-                               Enrol
-                            </a>
-                        </li>
-                        <li>
-                            <a href="report.php">
-                               Report Abuse
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.php">
-                               About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="moreondrugs.php">
-                               More on Drugs
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>  <a href="mailto:soberkenya@gmail.com">Sober Kenya</a>
-                </p>
-            </div>
-        </footer>
+ 
 
     </div>
 </div>
@@ -362,71 +325,60 @@ require 'checkLogin.php';
 
     <!--   Core JS Files   -->
     <script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
-    <script src="assets/js/bootstrap.min.js" type="text/javascript"></scri
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
  <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
     <script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
+    <script type="text/javascript" src="jquery.tabledit.js"></script>
+
 <!-- Scirpt source files -->
-    <script src="Styles/bootStrap/js/jquery-3.3.1.slim.min.js"></script>
     <script src="Styles/bootStrap/js/popper.min.js"></script>
     <script src="Styles/bootStrap/js/bootstrap.min.js"></script>
 
+        <!--   Core JS Files   -->
+ 
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--  Charts Plugin -->
+    <script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+    <script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+
+    <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+    <script src="assets/js/demo.js"></script>
+
 <!-- end of script source files -->
+<!--  -->
 
 <!-- for modal popup -->
 
   <script  type="text/javascript">
 
-    
-    $(document).ready( function () {
-        $('#editbtn').on('click', function(){
-           
+    $(document).ready(function(){
+        $('.table').Tabledit({
+        url:'action.php',
+        columns:{
+             identifier:[0,'id'],
+             editable:[[1,'name'],[2,'phone'],[3,'drug'],[4,'location'],[5,'gender']]
+         }
+       // restoreButton:false,
+       // onSuccess:function(data, textStatus, jqXHR){
 
+       //  //for removing from table 
+       //  if(data.action=='delete'){
+       //          $('#'+ data.id).remove();
+       //  }
 
-            $(document).on('click','.editbtn',function(){
-
-                var detail= $(this).attr("id");
-                $.ajax({
-                    url:"fecth.php",
-                    method:"POST",
-                    data:{detail,detail},
-                    dataType:"json",
-                    success:function(data){
-                        $('#id').val(data.id);
-                         $('#name').val(data.name);
-                        $('#phoneNumber').val(data.phoneNumber);
-                        $('#drugAbused').val(data.drugAbused);
-                        $('#location').val(data.location);
-                        $('#gender').val(data.gender);
-                          $('#editbtn').val("Update");
-
-                           $('#exampleModalLong').modal('show');
-                    }
-
-                })
-            });
-
-
-
-
-            // $tr = $(this).closest("tr");
-
-            // var data=$tr.children("td").map(function(){
-            //      return $(this).text();
-            // }).get();
-
-            // console.log(data);
-    
-            //  $('#id').val(data.id);
-            //  $('#name').val(data.name);
-            // $('#phoneNumber').val(data[2]);
-            // $('#drugAbused').val(data[3]);
-            // $('#location').val(data[4]);
-            // $('#gender').val(data[5]);
-
+       // }
         });
     });
+
 
 </script>
 

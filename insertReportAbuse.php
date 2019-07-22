@@ -1,5 +1,5 @@
 <?php
-require '../connection.php';
+require 'connection.php';
 
 
 $fullName=$_POST['fullname'];
@@ -17,6 +17,6 @@ if (!mysqli_query($connect,$sql)) {
 	echo 'Enrolled successfully';
 }
 
-header("refresh:0; url=../report.php");
+header("refresh:0; url=report.php");
 
 ?>
