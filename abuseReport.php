@@ -232,43 +232,7 @@ require 'checkLogin.php';
         </div>
 
 
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="index.php">
-                                Home
-                            </a>
-                        </li>
-
-                          <li>
-                            <a href="enrol.php">
-                               Enrol
-                            </a>
-                        </li>
-                        <li>
-                            <a href="report.php">
-                               Report Abuse
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.php">
-                               About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="moreondrugs.php">
-                               More on Drugs
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>  <a href="mailto:soberkenya@gmail.com">Sober Kenya</a>
-                </p>
-            </div>
-        </footer>
+       
 
     </div>
 </div>
