@@ -220,31 +220,14 @@ $total2+=$row['count'];
             
 
                   <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#componentsExamples">
-                            <i class="pe-7s-note2"></i>
+                   <a href="Enrolments.php">
+                            <i class="pe-7s-news-paper"></i>
                             <p>
-                                Enrollements
-                                <b class="caret"></b>
+                               Enrollements
                             </p>
                         </a>
-                        <div class="collapse " id="componentsExamples">
-                            <ul class="nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="pendingEnrolments.php">
-                                        <!-- <span class="sidebar-mini">P</span> -->
-                                         
-                                        <span class="sidebar-normal">Pending Enrollements</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="ApprovedEnrolment.php">
-                                        <span class="sidebar-normal">Approved Enrollements</span>
-                                    </a>
-                                </li>
-                               
-        
-                            </ul>
-                        </div>
+                       
+
                     </li>
 
                   <li class="nav-item">
@@ -330,26 +313,6 @@ $total2+=$row['count'];
                         </div>
                     </div>
 
-                        <div class="col-md-6">
-                        <div class="card">
-
-                            <div class="header">
-                                <h4 class="title">Approved  Enrolment</h4>  
-                            </div>
-
-
-                            <div class="content">
-
-                                <div id="piechart_3d2" style="width: 400px; height: 300px;" ></div>
-            
-                            </div>
-                        </div>
-                    </div>
-
-
-                    
-           
-
 
                 <div class="row">
                    
@@ -357,7 +320,7 @@ $total2+=$row['count'];
                     <div class="col-md-6">
                         <div class="card ">
                             <div class="header">
-                                <h4 class="title">Pending Enrollements</h4>
+                                <h4 class="title">Enrollements</h4>
                             </div>
                             <div class="content">
                               <div id="piechart_3d" style="width: 400px; height: 300px;" ></div>
@@ -370,43 +333,6 @@ $total2+=$row['count'];
         </div>
 
 
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="index.php">
-                                Home
-                            </a>
-                        </li>
-
-                          <li>
-                            <a href="enrol.php">
-                               Enrol
-                            </a>
-                        </li>
-                        <li>
-                            <a href="report.php">
-                               Report Abuse
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.php">
-                               About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="moreondrugs.php">
-                               More on Drugs
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>  <a href="mailto:soberkenya@gmail.com">Sober Kenya</a>
-                </p>
-            </div>
-        </footer>
 
     </div>
 </div>

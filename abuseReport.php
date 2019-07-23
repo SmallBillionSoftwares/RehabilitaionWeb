@@ -78,31 +78,14 @@ require 'checkLogin.php';
             
 
                   <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#componentsExamples">
-                            <i class="pe-7s-note2"></i>
+                   <a href="Enrolments.php">
+                            <i class="pe-7s-news-paper"></i>
                             <p>
-                                Enrollements
-                                <b class="caret"></b>
+                               Enrollements
                             </p>
                         </a>
-                        <div class="collapse " id="componentsExamples">
-                            <ul class="nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="pendingEnrolments.php">
-                                        <!-- <span class="sidebar-mini">P</span> -->
-                                         
-                                        <span class="sidebar-normal">Pending Enrollements</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="ApprovedEnrolment.php">
-                                        <span class="sidebar-normal">Approved Enrollements</span>
-                                    </a>
-                                </li>
-                               
-        
-                            </ul>
-                        </div>
+                       
+
                     </li>
 
                   <li class="nav-item active">
@@ -206,7 +189,7 @@ require 'checkLogin.php';
                                         require 'connection.php';
 
                                         //sql query
-                                        $sql="SELECT id,name,phone,drug,location,gender FROM report_abuse";
+                                        $sql="SELECT id,name,phone,drug,location,gender FROM report_abuse ORDER by id DESC";
                                        
                                         // quering database
                                         $result=$connect->query($sql);

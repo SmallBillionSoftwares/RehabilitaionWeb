@@ -11,7 +11,7 @@ require 'checkLogin.php';
     <link rel="icon" type="image/png" href="Styles/image/facon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Pending Enrollements</title>
+    <title> Enrollements</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -30,13 +30,6 @@ require 'checkLogin.php';
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="assets/css/demo.css" rel="stylesheet" />
 
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
-
-    <!--     Fonts and icons     -->
-   <!--  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'> -->
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="Styles/css/image.css">
     <link rel="stylesheet" type="text/css" href="Styles/css/table.css">
@@ -49,7 +42,15 @@ require 'checkLogin.php';
     <script type="text/javascript" src="Styles/js/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="Styles/js/jquery.tabledit.js"></script>
     <script type="text/javascript" src="jquery.tabledit.js"></script>
-    <link rel="stylesheet" type="text/css" href="icons/css/all.min.css">
+ 
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/image.css">
+
 </head>
 <body style="background-color: white;">
 
@@ -147,32 +148,15 @@ require 'checkLogin.php';
 
             
 
-                  <li class="nav-item active">
-                        <a class="nav-link" data-toggle="collapse" href="#componentsExamples">
-                            <i class="pe-7s-note2"></i>
+                <li class="nav-item">
+                   <a href="Enrolments.php">
+                            <i class="pe-7s-news-paper"></i>
                             <p>
-                                Enrollements
-                                <b class="caret"></b>
+                               Enrollements
                             </p>
                         </a>
-                        <div class="collapse " id="componentsExamples">
-                            <ul class="nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="pendingEnrolments.php">
-                                        <!-- <span class="sidebar-mini">P</span> -->
-                                         
-                                        <span class="sidebar-normal">Pending Enrollements</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="ApprovedEnrolment.php">
-                                        <span class="sidebar-normal">Approved Enrollements</span>
-                                    </a>
-                                </li>
-                               
-        
-                            </ul>
-                        </div>
+                       
+
                     </li>
 
                   <li class="nav-item">
@@ -205,7 +189,7 @@ require 'checkLogin.php';
                     </button>
                     <!-- end of toggle button -->
 
-                    <a class="navbar-brand" href="#">Pending Enrollements</a>
+                    <a class="navbar-brand" href="#"> Enrollements</a>
                 </div>
                 <div class="collapse navbar-collapse">
                    
@@ -249,7 +233,7 @@ require 'checkLogin.php';
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Pending Enrollements Details</h4>
+                                <h4 class="title">Enrollement Details</h4>
                             </div>            
                             </div>
 
@@ -276,7 +260,7 @@ require 'checkLogin.php';
                                         require 'connection.php';
 
                                         //sql query
-                                        $sql="SELECT id,name,phone,drug,location,gender FROM pending_enrol";
+                                        $sql="SELECT id,name,phone,drug,location,gender FROM pending_enrol ORDER by id DESC";
                                        
                                         // quering database
                                         $result=$connect->query($sql);
