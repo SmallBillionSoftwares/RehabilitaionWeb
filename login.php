@@ -14,7 +14,7 @@ $result=mysqli_query($connect,'select * from user_details
 	where email="'.$email.'" and password="'.$password.'" ');
 
 //verifying user credentials from database
-if(mysqli_num_rows($result)==1){
+if(mysqli_num_rows($result) == 1){
 	//starting session
 	session_start();
 
@@ -64,7 +64,7 @@ else{
 			<!-- end of user image -->
 
 			<div class="col-12 form-input">
-				<form method="post">
+				<form action="login.php" method="post">
 					<div class="text-danger"><?php if(isset($message)) {echo $message;} ?></div>
 					<div class="form-group">
 						<label>Email</label>

@@ -226,8 +226,8 @@ require 'checkLogin.php';
 
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a href="user.php">User Profile</a></li>
-                                <li class="divider"></li>
+                              
+                                
                                 <li><a href="logout.php">Logout</a></li>
                               </ul>
                         </li>
@@ -360,24 +360,24 @@ require 'checkLogin.php';
 
   <script  type="text/javascript">
 
-    $(document).ready(function(){
-        $('.table').Tabledit({
-        url:'action.php',
-        columns:{
-             identifier:[0,'id'],
-             editable:[[1,'name'],[2,'phone'],[3,'drug'],[4,'location'],[5,'gender']]
-         }
+   // $(document).ready(function(){
+    //    $('.table').Tabledit({
+      //  url:'action.php',
+       // columns:{
+      //       identifier:[0,'id'],
+       //      editable:[[1,'name'],[2,'phone'],[3,'drug'],[4,'location'],[5,'gender']]
+       //   }
        // restoreButton:false,
        // onSuccess:function(data, textStatus, jqXHR){
 
-       //  //for removing from table 
-       //  if(data.action=='delete'){
-       //          $('#'+ data.id).remove();
-       //  }
+        //for removing from table 
+    //     if(data.action=='delete'){
+    //             $('#'+ data.id).remove();
+    //     }
 
-       // }
-        });
-    });
+    //    }
+    //     });
+    // });
 
 
 </script>

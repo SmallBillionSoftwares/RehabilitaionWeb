@@ -156,8 +156,8 @@ require 'checkLogin.php';
 
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a href="user.php">User Profile</a></li>
-                                <li class="divider"></li>
+                               
+                                
                                 <li><a href="logout.php">Logout</a></li>
                               </ul>
                         </li>
@@ -198,7 +198,7 @@ require 'checkLogin.php';
                                         <th>Drug Abused</th>
                                          <th>Location</th>
                                          <th>Gender</th>
-                                         <th>Actions</th>
+                                         
                                     </tr>
                                 </thead>
                                     <?php
@@ -221,11 +221,7 @@ require 'checkLogin.php';
                                                 echo "<tr><td class='row'>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["phone"]."</td><td>".$row["drug"]."</td><td>"
                                                 .$row["location"]."</td><td>".$row["gender"]."</td>
                                                     
-                                                <td> 
-                 <button type='button' id='editbtn' data-toggle='modal'class='btn btn-primary editbtn' data-target='#exampleModalLong'> EDIT</button>
-                                                <button type='button' class='btn btn-danger'> DELETE</button>
-                                               
-                                                </td>
+                                        
                                                 </tr>";
                                             }
                                            

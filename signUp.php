@@ -55,8 +55,8 @@ if(mysqli_query($connect,$sql)){
 			<!-- end of user image -->
 
 			<div class="col-12 form-input">
-				<form action="signUp.php" method="post">
-					<div class="text-success"><?php if(isset($message)) {echo $message;} ?></div>
+				<form action="signUp.php" method="post" style="text-transform: uppercase; font-size:1.5vw; font-weight: bold; color: white;">
+					<div class="text-danger" style="text-transform: lowercase;"><?php if(isset($message)) {echo $message;} ?></div>
 					<div class="form-group">
 						<label>User Name</label>
 						<input type="text" class="form-control" placeholder="Enter User Name" name="user">
@@ -72,7 +72,7 @@ if(mysqli_query($connect,$sql)){
 					</div>
 					<div class="form-group">
 						<label>Confirm Password</label>
-						<input type="password" class="form-control" placeholder="ConfirmPassword" name="confirmpassword">
+						<input type="password" class="form-control" placeholder="Confirm Password" name="confirmpassword">
 					</div>
 
 					<button type="submit"name="signupbtn" class="btn btn-success" href="index">Sign Up</button>

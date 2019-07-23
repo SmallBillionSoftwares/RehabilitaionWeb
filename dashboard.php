@@ -14,13 +14,13 @@ $total2=0;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/png" href="Styles/image/facon.png">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="Styles/image/facon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Dashboard</title>
+  <title>Dashboard</title>
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
     <!-- fontawesome icons -->
@@ -47,6 +47,8 @@ $total2=0;
     <link rel="stylesheet" type="text/css" href="css/image.css">
      <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
      <script type="text/javascript" src="Styles/js/loader.js"></script>
+     <!--  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+  
 
      <!-- pending enrollments chart -->
     <script type="text/javascript">
@@ -198,7 +200,7 @@ $total2+=$row['count'];
 
     -->
 
-    	<div class="sidebar-wrapper">
+      <div class="sidebar-wrapper">
             <div class="logo">
                 <a href="#" class="simple-text">
                    Sober Kenya
@@ -258,7 +260,7 @@ $total2+=$row['count'];
             </ul>
             <!-- end of navigation links -->
 
-    	</div>
+      </div>
     </div>
 
     <div class="main-panel">
@@ -296,13 +298,13 @@ $total2+=$row['count'];
 
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a href="user.php">User Profile</a></li>
-                                <li class="divider"></li>
+                               
+                             
                                 <li><a href="logout.php">Logout</a></li>
                               </ul>
                         </li>
 
-			<li class="separator hidden-lg"></li>
+      <li class="separator hidden-lg"></li>
              </ul>
                 </div>
             </div>
@@ -414,10 +416,10 @@ $total2+=$row['count'];
 
     <!--   Core JS Files   -->
     <script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
-	<!--  Charts Plugin -->
-	<script src="assets/js/chartist.min.js"></script>
+  <!--  Charts Plugin -->
+  <script src="assets/js/chartist.min.js"></script>
 
     <!--  Notifications Plugin    -->
     <script src="assets/js/bootstrap-notify.js"></script>
@@ -426,8 +428,8 @@ $total2+=$row['count'];
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
-	<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+  <script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
-	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-	<script src="assets/js/demo.js"></script>
+  <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+  <script src="assets/js/demo.js"></script>
 </html>
