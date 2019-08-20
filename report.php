@@ -1,3 +1,27 @@
+<?php
+require 'connection.php';
+
+if(isset($_POST['reportbtn'])){
+$fullName=$_POST['fullname'];
+$phoneNumber=$_POST['phoneNumber'];
+$drugAbused=$_POST['drugAbused'];
+$location=$_POST['location'];
+$gender=$_POST['gender'];
+
+$sql="INSERT INTO report_abuse (name,phone,drug,location,gender)
+VALUES ('$fullName','$phoneNumber','$drugAbused','$location','$gender')";
+
+if (!mysqli_query($connect,$sql)) {
+	$message='Enrollment failed';
+	$label='text-danger';
+
+}else{
+	$message= 'Enrolled successfully';
+	$label='text-success';
+}
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -138,41 +162,41 @@
 <!--start of report abuse form -->
 <div class="col-12 top-margin" style="margin-top: 9%; padding-bottom: 5%">
     <!-- start enrol form -->
-    <form action="insertReportAbuse.php" method="post" style="margin: auto; width: 50%;" 
-    class="main-form needs-validation" novalidate="false">
+    <form action="report.php" method="post" style="margin: auto; width: 50%;" 
+    class="main-form needs-validation" >
         <h1 class="text-center">Report Abuse</h1>
         <div class="heading-underline"></div>
-
+		<div class="<?php if(isset($label)) {echo $label;} ?>"><?php if(isset($message)) {echo $message;} ?></div>
       <div class="form-group">
                     <label for="fullname">Full Names</label>
-                    <input type="text" name="fullname" class="form-control" required="true">
+                    <input type="text" name="fullname" class="form-control" required>
                     <div class="invalid-feedback">invalid input</div>
         </div>
 
         <div class="form-group">
             <label for="phoneNumber">Phone Number</label>
-            <input type="text" name="phoneNumber" class="form-control">
+            <input type="number" name="phoneNumber" class="form-control" required>
         </div>
 
           <div class="form-group">
             <label for="drugAbused">Drug Abused</label>
-            <input type="text" name="drugAbused" class="form-control">
+            <input type="text" name="drugAbused" class="form-control" required>
         </div>
 
         <div class="form-group">
             <label for="location">Location (County)</label>
-            <input type="text" name="location" class="form-control">
+            <input type="text" name="location" class="form-control" required>
         </div>
 
         <div class="form-group">
             <label for="gender">Gender</label>
-            <select name="gender" id="gender" class="form-control">
+            <select name="gender" id="gender" class="form-control" required>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" name="reportbtn" class="btn btn-primary">Submit</button>
     </form>
     <!-- end report form -->
 </div>

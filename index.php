@@ -146,33 +146,42 @@
     </ol>
 <!-- end of bottom indicators  -->
 
-    <div class="carousel-inner">
+    <div  class="carousel-inner">
       <div class="carousel-item active">
-        <img src="Styles/image/d06.gif" class="d-block w-100" alt="..." style="height:70vh;">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
+        <img src="Styles/image/d06.gif" class="d-block w-100" alt="..." style="height:70vh;opacity:0.7; ">
+        <div style="color: black; font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;font-size:170%; opacity: 0.9; " class="carousel-caption d-none d-md-block">
+          <h5 style="font-size: 170%;">Enrol</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <a href="#" class="btn btn-outline-light btn-lg">Read More</a>
+          <a href="enrol.php" class="btn btn-outline-light btn-lg">Read More</a>
         </div>
       </div>
       <!-- end of first carousel -->
       
       <div class="carousel-item">
-        <img src="Styles/image/d6.gif" class="d-block w-100" alt="..." style="height:70vh;">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
+        <img  src="Styles/image/d6.gif" class="d-block w-100" alt="..." style="opacity:0.7; height:70vh; ">
+        <div style="color: black;font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;font-size: 170%; opacity: 0.9; font-weight: bold;" class="carousel-caption d-none d-md-block">
+          <h5 style="font-size: 170%;">Enrol</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="btn btn-outline-light btn-lg">Read More</a>
+          <a href="enrol.php" class="btn btn-outline-light btn-lg">Read More</a>
         </div>
       </div>
         <!-- end of first carousel -->
 
       <div class="carousel-item">
-        <img src="Styles/image/d11.gif" class="d-block w-100" alt="..." style="height:70vh;">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
+        <img  src="Styles/image/fightAddiction.jpg" class="d-block w-100" alt="..." style="height:70vh;opacity:0.7; ">
+        <div style="color: black;font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem black; opacity: 0.9; font-size: 170%; font-weight: bold;" class="carousel-caption d-none d-md-block">
+          <h5 style="font-size: 170%;">Enrol </h5>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          <a href="#" class="btn btn-outline-light btn-lg">Read More</a>
+          <a href="enrol.php" class="btn btn-outline-light btn-lg">Read More</a>
         </div>
       </div>
         <!-- end of first carousel -->

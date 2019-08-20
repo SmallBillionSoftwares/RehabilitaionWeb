@@ -45,9 +45,9 @@ $total2=0;
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/image.css">
-     <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
      <script type="text/javascript" src="Styles/js/loader.js"></script>
-     <!--  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   
 
      <!-- pending enrollments chart -->
